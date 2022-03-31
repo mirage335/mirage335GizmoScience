@@ -33,73 +33,166 @@
 _document_collect() {
 # NOTICE: COLLECT
 
-# Not necessary. Warnings about 'command not found' to 'stderr' will be ignored by script pipelines.
-#! type -p 'recode' > /dev/null 2>&1 && recode() { false; }
+_findConsolidate_procedure() {
+	local current_consolidateScriptFilename
+	current_consolidateScriptFilename="$2"
+	[[ "$current_consolidateScriptFilename" == "" ]] && current_consolidateScriptFilename='consolidateVariables.sh'
+	
+	[[ "$ub_findConsolidate_maxheight" -gt "120" ]] && return 1
+	let ub_findConsolidate_maxheight="$ub_findConsolidate_maxheight"+1
+	export ub_findConsolidate_maxheight
+	
+	if [[ -e ./"$current_consolidateScriptFilename" ]]
+	then
+		_getAbsoluteLocation ./"$current_consolidateScriptFilename"
+		#_getAbsoluteFolder ./"$current_consolidateScriptFilename"
+		return 0
+	fi
+	
+	[[ "$1" == "/" ]] && return 1
+	
+	! cd .. > /dev/null 2>&1 && return 1
+	
+	_findConsolidate_procedure "$@"
+}
+_findConsolidate() {
+	local localFunctionEntryPWD
+	localFunctionEntryPWD="$PWD"
+	
+	cd "$1"
+	
+	_findConsolidate_procedure "$@"
+	
+	cd "$localFunctionEntryPWD"
+}
+export current_consolidateVariables_script=$(_findConsolidate "$scriptAbsoluteFolder")
+( [[ "$current_consolidateVariables_script" == "" ]] || [[ ! -e "$current_consolidateVariables_script" ]] ) && exit 1
+
+#source <( "$scriptAbsoluteFolder"/./../?????/?????.sh )
+source <( "$current_consolidateVariables_script" )
+
+#$zzLib_800_documents="$current_consolidateVariables_script"
+#$zzLib_895_reference
 
 
-currentByte=8
-
-RECODE_markup_html_pre_begin=$(_safeEcho "$markup_html_pre_begin" | recode ascii..html)
+source <( "$current_consolidateVariables_script" )
 
 
-export current_lorem_ipsum='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+
+
+
+
+export fromDocuments_boilerplateDisclaimer=$(cat "$zzLib_800_documents_____boilerplate_____disclaimer")
+
+
+
+export fromSelfFolder_something_pseudocode=$(cat "$scriptLib"/something_pseudocode.cpp 2>/dev/null)
+
+export fromSelfFolder_errata=$(cat "$scriptLib"/REVIEW-errata.txt 2>/dev/null)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # NOTICE: COLLECT
 }
 
 
-
+# TODO: TODO: TODO: TODO: TODO: WIP !
 _document_main() {
 #a
 #b
 # NOTICE: DOCUMENT
 #__HEADER_uk4uPhB663kVcygT0q_HEADER__
-_t 'Copyright (C) 2022 mirage335
-See the end of the file for license conditions.
-See license.txt for mirage335GizmoScience license conditions.
+_ _o date --iso-8601
+_o_ _safeEcho_newline "$fromDocuments_boilerplateDisclaimer"
+_ _v "$fromDocuments_boilerplateDisclaimer"
+_heading1 'title'
+_t 'Sub title description.
 
+Prose description.'
+_heading2 'Introduction'
+_t 'Precedents for usefulness, feasibility, etc?
 
-Tidbits for stuff to make and do mostly for science. Like &#39;handy&#39; lab equipment. Maybe not so much complete plans or state of the art. Maybe just stuff I may be thinking about to contribute to something else.
+Existing hardware, wetware, software adequacy? Scaling of hardware, wetware, or software needed?
+'
+_heading3 'Presented'
+_t '*) Some sketches.
+*) Some equations.
+*) Some figures of merit, benchmarks, performance requirements, etc.
+As may be plausible.'
+_heading2 'Conclusions'
+_t 'Something that is feasible makes something else feasible makes this feasible.
 
-Please beware, even for technical purposes, stuff here may be more than just reasonably oversimplified. Assumptions may be incorrect. Citing or quoting such information as more than mere inspiration for other concepts, which may then be even more wrong, is very strongly discouraged. Quoting without full context is especially very strongly discouraged.'
-_t '
+Something that is feasible makes something else feasible makes this feasible.
 
+Something that was feasible before, something seemingly more feasible now, does not change how the world works. Whatever risks, maybe a little more urgent, not really any different.
+
+Something vaguely similar has been done before anyway, or exists in nature, etc.'
+_page ' ' ###
+_heading2 'REFERENCE'
+_t 'https://www.example.com
+	&#39;useful fact quote&#39;
+	&#39;useful fact quote&#39;
+		&#39;related useful fact quote&#39;
+			Opinion.
+	&#39;useful fact quote&#39;
+
+https://www.example.com/someOtherSite1
+	CITATION - &#39;useful fact quote with frequently used number, statistic, etc&#39;
+
+https://www.example.com/someOtherSite2
+	CITATION - Minimalist and exemplifying best principles.'
+_page ' ' ###
+_heading2 'Example: Pessimistic Estimate - Something - Description'
+_t '$variable1 == Presume something .
+
+$variable2 == Presume something .
+
+$variable3 == Negligible .
 
 '
-_heading1 'Usage'
-_t 'Explore the directories to find &#39;pdf&#39;, &#39;txt&#39;, scriptedIllustrator scripts, etc.
+_e_ variable1=1
+_e_ variable2='$(_clc " 1 + 1 " )'
+_e_ variable3=0
+_e_ _solve '"( \"variableX\" == "$variable1" * "$variable2" + "$variable3" , \"variableX\" )"'
+_e_ _solve '"( \"variableZ\" == "$variable1" * "$variable2" + "$variable3" , \"variableZ\" )"'
+_o _safeEcho_newline 'units. Some number of other units is approximately some number of those units.'
+_t 'For whatever reason these results are an estimate of the most challenging part of the part of the problem modeled by this equation. Other related stuff may be change things a bit but not by so many orders of magnitude as to (in)validate feasibility.'
+_heading2 'Example: Pessimistic Estimate - Something - Description'
+_t '$variable1 == Presume something .
 
+$variable2 == Presume something .
 
-'
-_ _page
-_ _heading1 'Design'
-_ _t ' '
-_ _t '
-
-
-'
-_ _page
-_heading1 'Safety'
-_t 'Stuff here may not have had adequate due diligence for any possibility, feasibility, usability, or safe uses. Your accident is your accident.'
-_t '
-
+$variable3 == Negligible .
 
 '
-_ _page
-_heading1 'Reference'
-_t ' '
-_t '
-
-
-'
-_page
-_heading1 'Copyright'
-_t 'All content in this folder not owned by other authors is intended to be public domain. Other copyright notices may be provided as templates. See license.txt for details.'
-_t '
-
-
-'
+_e_ variable1=1
+_e_ variable2='$(_clc " 1 + 1 " )'
+_e_ variable3=0
+_e_ _solve '"( \"variableX\" == "$variable1" * "$variable2" + "$variable3" , \"variableX\" )"'
+_e_ _solve '"( \"variableZ\" == "$variable1" * "$variable2" + "$variable3" , \"variableZ\" )"'
+_o _safeEcho_newline 'units. Some number of other units is approximately some number of those units.'
+_t 'For whatever reason these results are an estimate of the most challenging part of the part of the problem modeled by this equation. Other related stuff may be change things a bit but not by so many orders of magnitude as to (in)validate feasibility.'
+_page ' ' ###
+_heading2 'Something - pseudocode'
+_o_ _safeEcho_newline "$fromSelfFolder_something_pseudocode"
+_ _page ' ' ###
+_ _o date --iso-8601
+_ _o_ _safeEcho_newline "$fromDocuments_boilerplateDisclaimer"
+_ _heading2 'errata'
+_ _v "$fromSelfFolder_errata"
 #__FOOTER_uk4uPhB663kVcygT0q_FOOTER__
 # NOTICE: DOCUMENT
 #y
@@ -117,9 +210,9 @@ echo -e '\n\n'
 
 #####Functions. Some may be from 'ubiquitous bash' .
 #_compressedFunctions_uk4uPhB663kVcygT0q_compressedFunctions_uk4uPhB663kVcygT0q_compressedFunctions_uk4uPhB663kVcygT0q_compressedFunctions
-current_internal_CompressedFunctions_bytes='12375'
-current_internal_CompressedFunctions_cksum='3023785929'
-current_internal_CompressedFunctions='
+current_internal_CompressedFunctions_bytes="12375"
+current_internal_CompressedFunctions_cksum="3023785929"
+current_internal_CompressedFunctions="
 /Td6WFoAAATm1rRGAgAhARwAAAAQz1jM4cduI8NdAC+ciKYksL89qRi90TdMvSwSEM6J8ipM2rR/Iqc/oYbShD5P+hKgz3ONSu7BhrUf8OSN4oZ8BL1e7m0JQ33pEQs007VTHA7nLczyIuWiilZSo+0zB132
 DrV189uAlZ6oqD3MK7bjrSmuGreEaBOC+z5QkGUPIDVaXfJmDg73/A1Y9JqRKxtli7ZDurfX2t/Z3m6RV6ku3LwPHl2qt8/kbWEubRkY3Fl2VTTFWjQ8Z9qfpBK4YyV7fw3X3hcUmN6Fz+u2P8eCSl/fCnNX
 HtvGeiwoJbZ3wje2iPvqVhHoy0BMVkEDcSqWo+znkV0BwqE45qLsZQ9IGG1CzglgciwcOU2fdsqKBFC5XA3WYFGg6uZ2q4mvn5jWR+FbeUz7YjupLAvLl7DE+daOBWzzyYeFrcMhDk1QeqOKpv41V0GTTqAm
@@ -198,7 +291,7 @@ K3rs0mjN1y5uIQKsryZwZfhyGJ0rqw15RHxbDR3rX9EYxkNbYkvM0XyW9IhW6F8hIeanz8BcziCThDY7
 CLOK878aamEjZRONYxTrQS87VtZysfLRbJbw+LZDLkIfnMKs4D/EdxfRbhtSv5jrPVky0nXUpFhz6bQ8lyOiOIp4wUOIcMFZwE510ODJX8NtpxisfxiYUuCaihrK8+hJBG0nbe4kaL5wOQuPP6NJsb5PCjxO
 QmLWD6GyNDRD7gbYyluYaL+lthK22HgOOrFU1JL3qT4RGDLv37LelxRto/drLLlAjq0cY0sGRhvvB4l9KbxLe2n6upQ46HXJ50sg4+0hHk3ZjTdbJq5T6PsO6SE+Q8PKv2u/Iit+nW6EZKIHFzdtG/H32uvX
 ittGFgYT23izDSV6kXsjY0D+1eldNG2EfZZAlSevM/IQkXN/6LzWi8eGYnHHYLtgsv98z6C84JGhJm+PBbwofDN6GAJ0BOb+/pVFb8hHEjpuD+koTjFLdw8u7QJ68tTqJwTom35a6Ztlqfd7IYXro46q+kix
-/EtTD6VQd/T5zT1n+mCxJ7m04472WQ9s7K0SIAutdCdedxFnAHPBAQNgus4/nTcXSWfmUgutV6bCfmy8AAAsi55xarRDbgAB30fvjgcAXQ8Y4LHEZ/sCAAAAAARZWg=='
+/EtTD6VQd/T5zT1n+mCxJ7m04472WQ9s7K0SIAutdCdedxFnAHPBAQNgus4/nTcXSWfmUgutV6bCfmy8AAAsi55xarRDbgAB30fvjgcAXQ8Y4LHEZ/sCAAAAAARZWg=="
 ! echo "$current_internal_CompressedFunctions" | base64 -d | xz -d > /dev/null && exit 1
 source <( echo "$current_internal_CompressedFunctions" | base64 -d | xz -d )
 unset current_internal_CompressedFunctions ; unset current_internal_CompressedFunctions_cksum ; unset current_internal_CompressedFunctions_bytes
@@ -250,22 +343,58 @@ unset current_script_path
 
 # NOTICE: Overrides ( 'ops.sh' equivalent ).
 
+_default_procedure() {
+	! _safePath "$scriptLib" && echo 'fail: _safePath' && return 1
+	
+	# Consolidating self, a 'draftedDocument' (usually an Xournal sketch), two separate documents (usually also created by a scriptedIllustrator script).
+	#pdfseparate "$scriptLib"/draftedDocument.pdf -f 1 -l 2 "$scriptLib"/draftedDocument-%d.pdf
+	#pdfunite "$scriptLib"/"$1".pdf "$scriptLib"/draftedDocument-*.pdf "$scriptAbsoluteFolder"/z01-templateArticle.pdf "$scriptAbsoluteFolder"/z02-templateArticle.pdf "$scriptAbsoluteFolder"/"$1".pdf
+	#rm -f "$scriptLib"/'draftedDocument-'*'.pdf' > /dev/null 2>&1
+	
+	# Copy self, as is.
+	cp "$scriptLib"/"$1".pdf "$scriptAbsoluteFolder"/"$1".pdf
+	
+	
+	
+	
+	
+	
+	rm -f "$scriptLib"/"$1".pdf > /dev/null 2>&1
+}
 _default() {
+	! type -p qalculate > /dev/null 2>&1 && exit 1
+	_solve() {
+		_qalculate_solve "$@"
+	}
+	_clc() {
+		_qalculate "$@"
+	}
+	
 	local current_deleteScriptLocal
 	current_deleteScriptLocal="false"
 	[[ ! -e "$scriptLocal" ]] && current_deleteScriptLocal="true"
 	
-	#"$scriptAbsoluteLocation" DOCUMENT > "$scriptAbsoluteLocation".out.txt
+	"$scriptAbsoluteLocation" DOCUMENT > "$scriptAbsoluteLocation".out.txt
 	
-	_scribble_markdown "$@"
-	_scribble_html "$@"
+	#_scribble_markdown "$@"
+	#_scribble_html "$@"
 	_scribble_pdf "$@"
 	
 	local currentScriptBasename
 	currentScriptBasename=$(basename "$scriptAbsoluteLocation" | sed 's/\.[^.]*$//')
-	"$scriptAbsoluteFolder"/"$currentScriptBasename".html _test
+	#_scribble_html "$@"
+	#[[ -e "$scriptAbsoluteFolder"/"$currentScriptBasename".html ]] && "$scriptAbsoluteFolder"/"$currentScriptBasename".html _test
+	rm -f "$scriptAbsoluteFolder"/"$currentScriptBasename".html > /dev/null 2>&1
 	
-	[[ "$current_deleteScriptLocal" == "true" ]] && rmdir "$scriptLocal"
+	
+	mv -f "$scriptAbsoluteFolder"/"$currentScriptBasename".pdf "$scriptLib"/"$currentScriptBasename".pdf
+	_default_procedure "$currentScriptBasename"
+	
+	mv -f "$scriptAbsoluteFolder"/"$currentScriptBasename".pdf "$scriptAbsoluteFolder"/"$currentScriptBasename".sh.pdf
+	
+	
+	[[ "$current_deleteScriptLocal" == "true" ]] && [[ -e "$scriptLocal" ]]  && rmdir "$scriptLocal"
+	sleep 3
 }
 
 # NOTICE: Overrides ( 'ops.sh' equivalent ).
