@@ -315,6 +315,7 @@ https://www.ebay.com/itm/163566331889?hash=item26155027f1:g:DKgAAOSwSudcV99Z
 Objectives: PLAN 4x/0.10, 10x/0.25, 40x/0.65 SL, 100x/1.25 OIL
 HKW 10x
 WF 20x
+	For $40 extra, PLAN objectives and no WF25x eyepiece.
 
 >RXL-4T   $349.00
 https://www.ebay.com/itm/113916959514?hash=item1a85fadb1a:g:Nz4AAOSwQPlV9CsK
@@ -325,8 +326,9 @@ Optional Accessories
 Darkfield Condenser
 Turret Phase Contrast
 Polarizing Kit
+	For $60 extra, PLAN objectives and WF25x eyepiece.
 
->RXL-4T-300M   $664.05
+RXL-4T-300M   $664.05
 https://www.ebay.com/itm/113916961147?hash=item1a85fae17b:g:gxcAAOSwyQtV51N-
 Professional Clinical Trinocular LED Biological PLAN Microscope 18Mp USB 
 Camera
@@ -336,6 +338,7 @@ Eyepiece HKW 10x & WF 20x
 Camera: 9 Mega Pixel with 0.5x Reduction Lens
 	Seems contradictory. Maybe 9 MegaPixel, maybe 18 MegaPixel, maybe 
 PLAN, maybe SEMI PLAN.
+	Not a discount from buying camera separately.
 <!-- # --></pre><!-- scriptedIllustrator_markup_uk4uPhB663kVcygT0q
 '
  '_' '_heading1' 'Introduction'
