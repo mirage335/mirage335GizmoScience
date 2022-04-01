@@ -767,7 +767,7 @@ _default() {
 	
 	"$scriptAbsoluteLocation" DOCUMENT > "$scriptAbsoluteLocation".out.txt
 	
-	#_scribble_markdown "$@"
+	_scribble_markdown "$@"
 	#_scribble_html "$@"
 	_scribble_pdf "$@"
 	
