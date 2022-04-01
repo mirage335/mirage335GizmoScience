@@ -767,7 +767,7 @@ _default() {
 	
 	"$scriptAbsoluteLocation" DOCUMENT > "$scriptAbsoluteLocation".out.txt
 	
-	_scribble_markdown "$@"
+	#_scribble_markdown "$@"
 	#_scribble_html "$@"
 	_scribble_pdf "$@"
 	
@@ -785,7 +785,11 @@ _default() {
 	
 	
 	[[ "$current_deleteScriptLocal" == "true" ]] && [[ -e "$scriptLocal" ]]  && rmdir "$scriptLocal"
-	sleep 3
+	
+	
+	_scribble_markdown "$@"
+	mv "$scriptAbsoluteFolder"/"$currentScriptBasename".md "$scriptAbsoluteFolder"/README.md
+	#sleep 3
 }
 
 # NOTICE: Overrides ( 'ops.sh' equivalent ).
