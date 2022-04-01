@@ -33,73 +33,6 @@
 _document_collect() {
 # NOTICE: COLLECT
 
-_findConsolidate_procedure() {
-	local current_consolidateScriptFilename
-	current_consolidateScriptFilename="$2"
-	[[ "$current_consolidateScriptFilename" == "" ]] && current_consolidateScriptFilename='consolidateVariables.sh'
-	
-	[[ "$ub_findConsolidate_maxheight" -gt "120" ]] && return 1
-	let ub_findConsolidate_maxheight="$ub_findConsolidate_maxheight"+1
-	export ub_findConsolidate_maxheight
-	
-	if [[ -e ./"$current_consolidateScriptFilename" ]]
-	then
-		_getAbsoluteLocation ./"$current_consolidateScriptFilename"
-		#_getAbsoluteFolder ./"$current_consolidateScriptFilename"
-		return 0
-	fi
-	
-	[[ "$1" == "/" ]] && return 1
-	
-	! cd .. > /dev/null 2>&1 && return 1
-	
-	_findConsolidate_procedure "$@"
-}
-_findConsolidate() {
-	local localFunctionEntryPWD
-	localFunctionEntryPWD="$PWD"
-	
-	cd "$1"
-	
-	_findConsolidate_procedure "$@"
-	
-	cd "$localFunctionEntryPWD"
-}
-export current_consolidateVariables_script=$(_findConsolidate "$scriptAbsoluteFolder")
-( [[ "$current_consolidateVariables_script" == "" ]] || [[ ! -e "$current_consolidateVariables_script" ]] ) && exit 1
-
-#source <( "$scriptAbsoluteFolder"/./../?????/?????.sh )
-source <( "$current_consolidateVariables_script" )
-
-#$zzLib_800_documents="$current_consolidateVariables_script"
-#$zzLib_895_reference
-
-
-source <( "$current_consolidateVariables_script" )
-
-
-
-
-
-
-
-export fromDocuments_boilerplateDisclaimer=$(cat "$zzLib_800_documents_____boilerplate_____disclaimer")
-
-
-
-export fromSelfFolder_something_pseudocode=$(cat "$scriptLib"/something_pseudocode.cpp 2>/dev/null)
-
-export fromSelfFolder_errata=$(cat "$scriptLib"/REVIEW-errata.txt 2>/dev/null)
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -116,8 +49,6 @@ _document_main() {
 # NOTICE: DOCUMENT
 #__HEADER_uk4uPhB663kVcygT0q_HEADER__
 _ _o date --iso-8601
-_o_ _safeEcho_newline "$fromDocuments_boilerplateDisclaimer"
-_ _v "$fromDocuments_boilerplateDisclaimer"
 _heading1 'title'
 _t 'Sub title description.
 
@@ -185,14 +116,6 @@ _e_ _solve '"( \"variableX\" == "$variable1" * "$variable2" + "$variable3" , \"v
 _e_ _solve '"( \"variableZ\" == "$variable1" * "$variable2" + "$variable3" , \"variableZ\" )"'
 _o _safeEcho_newline 'units. Some number of other units is approximately some number of those units.'
 _t 'For whatever reason these results are an estimate of the most challenging part of the part of the problem modeled by this equation. Other related stuff may be change things a bit but not by so many orders of magnitude as to (in)validate feasibility.'
-_page ' ' ###
-_heading2 'Something - pseudocode'
-_o_ _safeEcho_newline "$fromSelfFolder_something_pseudocode"
-_ _page ' ' ###
-_ _o date --iso-8601
-_ _o_ _safeEcho_newline "$fromDocuments_boilerplateDisclaimer"
-_ _heading2 'errata'
-_ _v "$fromSelfFolder_errata"
 #__FOOTER_uk4uPhB663kVcygT0q_FOOTER__
 # NOTICE: DOCUMENT
 #y
@@ -362,6 +285,8 @@ _default_procedure() {
 	rm -f "$scriptLib"/"$1".pdf > /dev/null 2>&1
 }
 _default() {
+	mkdir -p "$scriptLib"
+	
 	! type -p qalculate > /dev/null 2>&1 && exit 1
 	_solve() {
 		_qalculate_solve "$@"

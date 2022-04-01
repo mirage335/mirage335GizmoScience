@@ -1,0 +1,470 @@
+
+_ microFab _
+Off-the-shelf microscope and pico projector UV ~365nm photolithography and metrology compact lab tool.
+
+May affirm important expectations (<1000mJ/cm2 from light source for photolithography) and good practices (eg. water purity) for &#39;lithoDive&#39; "$photolithography_joules_cm2" . Also a useful compact tool for labs which may not be able to spare much floor space.
+
+[Projector] -> [Adapter (optional)] -> Eyepiece -> (microscope) -> Objective -> Workpiece (wafer or webcam)
+
+[Illumination -> Condenser -> Spatial Light Modulator -> Lens] -> [Macro Lens ~2x -> Diffuser -> Lens -> Cylinder -> Cylinder] -> Eyepiece -> (microscope) -> Objective -> Workpiece (wafer or webcam)
+
+Webcam <- Cylinder (optional) <- Cylinder (optional) <- Eyepiece <- (microscope) <- Objective <- Workpiece (wafer or webcam)
+
+
+Adapter parts are all optional. Flipping projector lens backward or otherwise adjusting projector focus may eliminate need for adapter. Diffuser and cylinder lens may simplfy uniformity and (astigmatic) focusing.
+
+_ Bill-Of-Materials _
+
+_ Projector _
+
+>Brookstone 801143   ~$100
+Pico DLP projectors seem like a nice BOM line item - cheap, compact, and ready to be reassembled with a new UV light source or used as a bare DLP chip on a flexible PCB with nearby HDMI controller.
+Such a compact projector could be converted to a standard module that just fits on the eyepiece of a trinocular port, which human eyes and webcams have already standardized.
+Not expecting any of the usual issues &#39;hacking&#39; DLP projectors to pass UV ~365nm from the mercury lamp. Should remain cheaply available too - the DLP chip and such they are made with is actually comparably cheap (IIRC ~$20).
+https://www.youtube.com/watch?v=ZtpHRiORFP8
+https://www.youtube.com/watch?v=IExXIegZhsM
+
+>E4500MKII   optional upgrade later
+UV projectors already seem to exist, off-the-shelf. A nice upgrade path from a tiny pico projector if better quality optics or more pixels per exposure is really justified by ongoing production or months of delays from image quality (eg. contrast ratio, optics blurring, aberration) issues.
+Minimum working distance is 25mm, it can&#39;t spread the light much more than that, so any &#39;macro lens&#39; ~25mm diameter or larger can recapture all the light.
+https://www.ekbtechnologies.com/e-store/lightcrafter-e4500mkii-plus-365nm?c=5cb86ca432c93
+
+Heavier DLP projectors may include better quality and larger aperture optics. However, disabling color wheel and adding a UV pass hot mirror may require some &#39;hacking&#39; which may be uinque to each projector.
+OpenBuilds linear rail, aluminum extrusion, crude kinematic/screw tilt plate, etc, could be built ad-hoc to mount projector to microscope.
+https://en.wikipedia.org/wiki/Ultra-high-performance_lamp
+https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=acer+dlp+projector&_sacat=0
+https://packet39.com/blog/2016/03/19/how-to-remove-a-dlp-color-wheel-and-in-my-case-also-destroy-the-projector/
+https://www.edmundoptics.com/f/uv-hot-mirrors/13270/
+
+Casio XJ-A140V   $200
+I think I can hack these to use a different light source, no color wheel, etc. No guarantees, may still block too much UV ~365nm .
+https://www.ebay.com/itm/275204929914?epid=84984702&hash=item40137df97a:g:hYIAAOSwxM9iKpKc
+
+_ Illumination _
+
+>SST-10-UV-A130-F365-00   ~$10
+LEDs UV 365nm 500mW/2mmDiameter apparently are available enough to rely on. Exposure of 0.1s/10umDiameter expected.
+A module with a condenser (low quality short focal length lens) and diffuser may be necessary for uniformity and photodiode feedback power drift correction.
+Low duty cycle may triple maximum power output.
+Heatsink for LED required.
+https://www.mouser.com/c/?q=365nm%20led
+https://www.mouser.com/ProductDetail/Luminus-Devices/SST-10-UV-A130-F365-00?qs=byeeYqUIh0Pj3UhvlMAaGA%3D%3D
+https://www.mouser.com/ProductDetail/Luminus-Devices/SST-10-UV-A130-E365-00?qs=nFovR%252B4R4UPzfxchETWTPw%3D%3D
+
+
+LED in a 0805 package may be slightly higher intensity, at 120mW and <0.75mm expected diameter.
+Smaller emitter area may be more difficult to align.
+https://www.mouser.com/ProductDetail/Kingbright/ATS2012UV365?qs=%252BEew9%252B0nqrC2JRExRfahQQ%3D%3D
+
+_ Adapter - Macro Lens _
+
+>ULANZI WL-1 ZV1   ~$50   ~2x   or any adequate &39;macro lens&#39;
+&#39;Macro lens&#39;, as used by cameras, is usually a wide diameter lens, and reportedly can efficiently capture and refocus light from a projector to a small diameter for entrance into a microscope eyepiece or trinocular port. Any such lens with a diameter greater than the minimum unfocused image diameter directly in front of the projector should suffice.
+More than one lens may be required to achive sufficiently short focal length to converge the divergent image.
+https://amazon.com/Angle-ULANZI-Macro-Additional-Camera/dp/B08HQVZ2PC
+https://www.youtube.com/watch?v=k3HEet5EXro
+
+_ Adapter - Diffuser _
+
+>#38-788   ~$25
+https://www.edmundoptics.com/f/ground-glass-diffusers/12287/
+	MAJOR - &#39;float glass&#39;
+	MAJOR - &#39;Sandblasted on first surface&#39;
+	MAJOR - &#39;Grit&#39; &#39;600&#39;
+
+_ Adapter - Lens _
+
+>Arducam M12 Lens Set   ~$100
+M12 is compact and convenient.
+As projection/camera imaging lenses, for converting a flat surface, a simpler lens may be inadequate.
+https://www.amazon.com/Arducam-Raspberry-Arduino-Telephoto-Cleaning/dp/B07L92S9MT
+
+_ Adapter - Cylinder Lens _
+
+https://www.39dollarglasses.com/
+
+_ Webcam _
+
+>MU1003   10MP USB 3.0 Color CMOS C-Mount Microscope Camera with Reduction Lens   ~$309.99
+https://amscope.com/collections/microscope-parts-accessories?sort=price-ascending&pf_t_camera_connectivity=camera+connectivity%7CUSB+3.0
+7.2fps @3584x2746
+Sensor Size: 1/2.2inch (6.119mm(H) x 4.589mm(V), diagonal 7.649mm)
+&#39;Featuring built-in C-mount compatibility and 23mm reduction lens adapter, our camera can be attached to any instrument with a C-mount or a 23mm, a 30mm and a 30.5mm photo port.&#39;
+
+
+>SC1003-CK   Swiftcam 10 Megapixel Camera for Microscopes   ~$309.99
+Higher resolution may be important, but unusually, the benefits are only proportional to *linear* (ie. sqrt() ) resolution.
+Compatibility with 25x eyepiece or similar is important - need to clearly see any projection image quality issues at center area.
+https://amazon.com/Megapixel-Microscopes-Reduction-Calibration-Compatible/dp/B07RNQC1WL
+7.2fps at 3584x2746
+CMOS sensor size: 1/2.3inch
+
+
+>MD35   0.3MP USB 2.0 Color CMOS Digital Eyepiece Microscope Camera   ~$50
+Cheap. Hack as an eyepiece projector adapter.
+https://amscope.com/collections/microscope-parts-accessories?sort=price-ascending&pf_t_camera_connectivity=camera+connectivity%7CUSB+3.0&pf_t_camera_connectivity=camera+connectivity%7CUSB+2.0
+&#39;23mm ocular or photo ports, but it can be adapted to fit 30mm or 30.5mm ports using the included sleeves&#39;
+
+>Logitech C270   ~$20
+Bad for resolution. One of the very few USB cameras I have found stable with Linux/RasPi over many years.
+https://www.thingiverse.com/thing:2055953
+https://amazon.com/gp/product/B004FHO5Y6/
+
+_ Microscope _
+
+>T120-WM   $351.99
+https://amscope.com/collections/compound-microscopes/products/t120-wm
+https://amscope.com/collections/microscope-parts-accessories-microscope-objective-lens-microscope-achromatic-objective-lens/products/a60x-yx-v460
+https://amscope.com/products/ep25x23-s
+
+
+>RMH4T250X   $289.00
+RMH4TL250X???
+RXL4T???
+Not sure what the &#39;L&#39; or other letters in &#39;Microscopes India&#39; model numbers signifies. Definitely do NOT want polarizer or anything else &#39;extra&#39; that could block UV 365nm or melt under intense concentrated light . Might be lowest risk to go with the least featureful microscope.
+If any of the mechanical stages are better, that might be worthwhile, but feedback controlled stepper motors seems simple to build and too much to ask for from &#39;commercial-off-the-shelf&#39;.
+https://www.ebay.com/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=microscopesind&store_name=microscopesindia&_oac=1
+&#39;METAL RACK&#39; &#39;PINION&#39; &#39;NO PLASTIC GEAR&#39;
+&#39;SEMI PLAN Achromatic&#39;
+&#39;WF 10x&#39; &#39;WF 25x
+https://www.ebay.com/itm/143405630452?hash=item2163a443f4:g:pDwAAOSwl9BWHUmj
+https://www.ebay.com/itm/163897106947?hash=item2629076203:g:qhYAAMXQfFJRNJSV
+
+_ Conclusions _
+*) Spare objectives should be kept for fine work only, in case objectives tend to get degraded.
+
+*) Flourescence microscope may be better. Compound microscope should be adequate, cheaper, and will offer an opportunity to affirm if there are any issues at 365nm, and characterize such issues definitively.
+
+*) Short exposure times may be strictly required for quality. Exposed photoresists, IIRC from a university tutorial referenced by &#39;lithoDive&#39;, reportedly must be developed within one hour at most. This strongly implies that a small amount of light activates a substance within the photoresists, which further sensitizes the photoresist to both heat and light.
+
+*) Red or orange liquid could protect photoresist outside the current area under the imager. Such liquid could be removed and deposited completely due to surface tension, or if not, washed away by clear liquid.
+
+*) If a device takes multiple days of scanning to fabricate, due to exposed photoresist degradation, completely fabricating entire layers in one scan may be impossible. Dividing layer into separate pieces to develop, etch/deposit, etc, separately, may be necessary.
+
+*) LED. At least <365nm >0.01mW/10umDiameter . A 1mm 100mW LED would require ~0.1s/10umDiameter exposure time. Formula is 100000 / (((1 * centimeter)^2) / ((10 * micrometer)^2)) = 0.1 . The &#39;100000&#39; is the &#39;photolithography_seconds_cm2= 100000&#39; &#39;Photolithography Joules (Watt-Seconds) Constrained&#39; from &#39;lithoDive&#39;.
+
+
+*) Focus will be by projected image only - mirror polish surface will look featureless, blank. Without projection, the image would look the same both in and out of focus. No optical microscope see anything in a mirror. Some tricks will make this easier if necessary, such as astigmatic focusing, using a more interesting sample, or using a webcam CCD as a sample and sensor.
+
+*) Microscope objective at 60x will be most convenient to have, best non-immersion resolution. Shortening projector resolution to nearly that of eyepiece, rather than projecting directly into microscope, may improve resolution substantially.
+
+*) Cannot rely on expecting to get away with 445nm, or 405nm. Must be prepared for <365nm, DLP projector mercury-vapor &#39;Ultra-high-performance_lamp&#39; equivalent. Not all projectors have this.
+
+*) Vacuum chuck may help with vibration during long or high-resolution (<3um) imaging. Depth-of-field (focus depth) may be nanometers, wafers are thin and lightweight.
+
+
+*) Good mechanical stages are at least stepper motor driven with optical feedback to correct backlash. If such custom hardware is necessary, development or assembly time will be necessary. &#39;Slabs&#39; and the gantry from &#39;lithoDive&#39; are the appropriate technology to develop in that case. Should be simpler to add stepper motor wheels to a flat slab than to adapt stepper motors to existing stages.
+
+*) Tilt tolerance between projector/microscope/workpiece should be ~1deg for the <100um FOV usual for microscopes, unlike the large FOV of larger photolithography machines and possibly &#39;lithoDive&#39;. Tilt correction should not be necessary.
+
+_ Astigmatic Focusing _
+Astigmatic focusing will place a purely, slightly, cylindrical lens in front of a webcam, essentially an &#39;eyeglasses prescription&#39; to deliberately add slight astigmatism. As a cylindrical lens will focus to a line at a plane close than the spherical lens focal plane. Thus, when projecting a dot, if too close, a large oval will appear. If too far, both the spehrical and cylinder lens will be out of focus, and a large oval *in the opposite direction* will appear.
+
+Same technique can be used to focus the projector independently. Projector can be given a diagonal lens, while the camera uses a horizontal/vertical lens, to visualize the focus of both projector and webcam simultaneously and separately.
+
+
+Two cylinder lenses may be rotated to exactly nullify the cylinder focusing without changing the rate of refraction in the light path. During focusing, both cylindrical lenses are present. When done, one of these is replaced with a divergent lens (essentially an &#39;eyeglasses prescription&#39; to correct the introduced astigmatism).
+
+_ errata _
+*) Focus - not possible without projection. A mirror finish surface has no visible features for any optical microscope to focus, and will always look like just a blank color.
+
+*) Just pointing a projector at a microscope eyepiece reportedly actually works... just like any lens refocusing projector output a small image on a wall.
+
+
+*) Photoresists seem to nonlinearly sensitize and degrade if not developed quickly after brief exposure, imposing a requirement for intense light, fast exposure, high contrast ratio, uniformity, etc. Slow exposures or overexposure apparently may be *very bad* for quality.
+ *) Also that is very consistent with the many issues I had with high-resolution 6mil PCB fab. Had I known, I might have tried deliberate underexposure.
+
+
+*) DLP pico projectors all seem to have small electronics, less filters, few screws, and put the DLP on a flex PCB, like a better and cheaper evaluation kit.
+ *) DLP pico projector should not require adapter. Should be much more straightforward to modify for ultra short &#39;throw&#39; - less material to remove, smaller required projection lens aperture, bare DLP if necessary, etc.
+ *) Having already replaced the light source with a uniformly diffused 365nm UV LED obviates conversion to diffused rear-projection also.
+
+*) Most DLP projectors usually have a 365nm lamp, but almost completely filter out the UV, with apparently severe impact on quality, unformity, etc. Hacking and improving these may not be easiest.
+
+
+*) Cheap trinocular compound microscope is expected to work.
+*) Flourescence microscope may be a little better but NOT necessary.
+
+
+*) Impurities seem irrelevant. All materials reportedly used seem commonly available. Scanning microscope could detect and overwrite/rewrite/etc around dust particles or other defects.
+*) Photoresist is shown *red* colored for mercury vapor.
+ *) https://youtu.be/Nxz_ENnmgtI?t=200
+
+*) Expect ~10um FOV (yes, 10 microns).
+
+
+
+*) Differential Interference Contrast may use a diffuse &#39;interference plane&#39; which may melt under projection if plastic, paper, etc.
+
+*) Imaging quality is required for all optics not a few orders of magnitude out of the focal plane.
+
+*) Light focus at a point prior to microscope lens may be necessary, unlike presentation projectors.
+
+*) Incident Brightfield is through-objective illumination (or presumably, projection), required.
+
+
+*) Reported use of inkjet transparencies with flourescence microscopes, suggests 0.6um (600nm) with contrast ratio as low as 10:1 is routinely achievable when maximum resolution was obviously not prioritized. Still, resist over/under exposure may be orders of magnitude more critical at lower resolutions or if other aspects are underperforming (eg. poor focus, projector tilt, inadequately calibrated vignetting, etc).
+
+
+
+
+
+
+*) Reportedly, a photoresist can be inspected and redone. If that can happen without damaging nanometer thick layers, or if at least deep layers can be protected, the selective, maskless, small-area, automatic design of &#39;lithoDive&#39; would be a perfect fit for unusually extensive *multiple patterning*.
+
+*) Immersion lithography is not prohibitive. Photoresist should protect wafer. Computer feedback and repeated exposures should be able to overwrite defects due to immersion liquid particles, if not optically detect particles and replace immersion liquid when particles are present.
+ *) Slabs (ie. &#39;lithoDive&#39;) must already have spill reservoirs and dump ports for other &#39;wet&#39; uses.
+
+
+*) Microscope - tube lens, beamsplitter, prisms, mirrors, trinocular - these seem rather valuable these days.
+
+
+
+
+
+
+
+
+*) Salvage an &#39;Ultra-high-performance_lamp&#39; DLP projector from a resin 3D printer.
+
+*) Fake RGB Arduino. Records an RGB sequence from photodiodes during a button press then plays back that RGB sequence to LEDs (universal DLP projector color wheel hack).
+
+
+
+*) Get an intense UV light source for DIY projector, photomask, or to add to Casio XJ-A140V projector.
+
+ *) Figure out electrical power for a separate ultra-high-performance lamp.
+https://en.wikipedia.org/wiki/Ultra-high-performance_lamp
+
+ *) Nitrogen laser, 337nm. Bulky, and mirror bounces would be necessary, may be too short wavelength for most DLP. Ok for &#39;lithoDive&#39;, or a DLP pico projector. NOT convenient for already bulky projectors or constrained light paths.
+
+ *) DIY, YouTube, etc, sourced nitrogen laser. Maybe not worth the effort.
+https://www.youtube.com/watch?v=d19dM8ZB3Qs
+
+ *) Laser, 375nm. Seems rare and barely affordable.
+https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=375nm+laser&_sacat=0
+
+ *) Laser 355nm. Seems rare and a poor investment.
+https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=355nm+laser&_sacat=0
+
+ *) LED. At least <365nm >0.01mW/10umDiameter . A 1mm 100mW LED would require ~0.1s/10umDiameter exposure time. Formula is 100000 / (((1 * centimeter)^2) / ((10 * micrometer)^2)) = 0.1 . The &#39;100000&#39; is the &#39;photolithography_seconds_cm2= 100000&#39; &#39;Photolithography Joules (Watt-Seconds) Constrained&#39; from &#39;lithoDive&#39;.
+https://www.mouser.com/c/?q=365nm%20led
+	Some LEDs have could have ~0.5W output at 2mm at 365nm diameter.
+
+  *) LED may require defocusing and/or dedicated diffuser with focusing lenses to ensure uniformity.
+
+
+*) Off the shelf hard-UV projector. These apparently do exist, and if the LEDs chosen were high-intensity, could be near-optimal.
+https://www.ekbtechnologies.com/e-store/3d-printer-platforms
+
+_ Safety _
+
+Do NOT observe microscope output directly without orders of magnitude of well calculated redundant attenuation (eg. multiple layers of scratch-free sunglasses) at the eyepiece. Obviously, projecting ~100mW, or tens of watts, through a microscope, will be blindingly bright. If you cannot anticipate and take all reasonable precautions, do not attempt anything described here. Your accident is your accident.
+
+ '_page' ' 'PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak -H-H-H-H- PageBreak
+
+
+_ REFERENCE _
+
+https://www.quora.com/How-does-a-CD-laser-focus
+https://www.physics.udel.edu/~watson/scen103/cd-astig.html
+
+https://www.39dollarglasses.com/
+	Both convergent and divergent cylinder lenses should be obtainable as an eyeglass prescription.
+
+https://www.youtube.com/watch?v=Nxz_ENnmgtI
+	&#39;macro lens adapters&#39; &#39;using two of them&#39; &#39;beam that converges somewhere in the microscope body&#39; &#39;simulation can be useful here but you don&#39;t really know the parameters of cheap lenses&#39;
+	&#39;first prototypes were a lot sketchier and just involved shooting an unmodified projector right into the camera or eyepiece port of a microscope and that gets you pretty decent results actually&#39;
+
+
+http://www.ijaist.com/wp-content/uploads/2018/08/QUARTZCRYSTALFORTHICKNESSMEASUREMENT-1.pdf
+	Quartz crystal under same conditions as wafer can measure oxide growth by slight frequency shift.
+
+
+
+
+
+
+
+
+
+https://www.ti.com/dlp-chip/overview.html
+https://www.ti.com/tool/DLPDLCR2000EVM#buy
+https://www.ti.com/dlp-chip/advanced-light-control/ultraviolet/products.html
+https://www.ti.com/product/DLP7000UV
+
+
+
+https://en.wikipedia.org/wiki/Ultra-high-performance_lamp
+
+https://www.mouser.com/c/?q=365nm%20led
+
+
+https://www.mouser.com/ProductDetail/LED-Engin/LZ1-00UV0R-0000?qs=P1JMDcb91o4eQ1bt2b01Zg%3D%3D
+https://www.mouser.com/datasheet/2/228/LED_Engin_Datasheet_LuxiGen_LZ1-00UV0R_rev2.0_2020-1889174.pdf
+	&#39;flux density&#39;
+
+https://www.mouser.com/datasheet/2/678/AUV3_Sxx2_0xx0K_DS100-1923831.pdf
+	&#39;Radiant Flux Bin&#39; &#39;Max&#39; &#39;910&#39; &#39;mW&#39;
+
+
+
+
+https://www.edmundoptics.com/c/optical-diffusers/731/
+https://www.edmundoptics.com/f/ground-glass-diffusers/12287/
+	MAJOR - &#39;float glass&#39;
+	MAJOR - &#39;Sandblasted on first surface&#39;
+
+
+
+https://www.ebay.com/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=microscopesind&store_name=microscopesindia&_oac=1
+https://www.ebay.com/sch/185278/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=microscopesind&store_name=microscopesindia&_oac=1
+	&#39;Microscopes India&#39;
+
+https://amscope.com/collections/compound-microscopes?gclid=Cj0KCQjw3IqSBhCoARIsAMBkTb3wiV0H5v8I39RqAGZyU6SwfOVa_rYzjrXcOyErAgd6BhCLt-iHhrEaAgezEALw_wcB&gclsrc=aw.ds&sort=price-ascending&pf_t_head_style=head+style%7CMicroscopes-Trinocular
+
+https://amscope.com/collections/microscope-parts-accessories-microscope-objective-lens-microscope-achromatic-objective-lens/products/a60x-yx-v460
+	&#39;60x&#39;
+		MAJOR - Worth getting.
+
+
+https://www.edmundoptics.com/f/international-standard-microscope-objectives/11958/
+	&#39;60x&#39;
+
+https://www.edmundoptics.com/f/nikon-achromatic-finite-conjugate-objectives/13510/
+	&#39;60x&#39;
+
+
+
+
+
+
+https://amscope.com/collections/compound-microscopes/products/t120-wm
+	&#39;Eyepieces: 10X&#39;
+	&#39;40X(S), 100X(S, Oil)&#39;
+
+
+
+https://www.mouser.com/c/?q=lightcrafter&sort=pricing
+
+
+https://www.mouser.com/ProductDetail/Texas-Instruments/DLPDLCR230NPEVM?qs=zW32dvEIR3tiMHYZswsS3g%3D%3D
+	&#39;New Product&#39;
+	&#39;Factory Lead-Time&#39; &#39;3 Weeks&#39;
+	&#39;$397.66&#39;
+
+https://www.ti.com/lit/ug/dlpu103a/dlpu103a.pdf?ts=1648526971271
+	Seems to connect only to RasPi.
+
+https://www.ekbtechnologies.com/e-store/e4750lc-uv-405nm-full-hd-1?c=5cb86ca432c93
+	&#39;385nm&#39; &#39;1.5W&#39;
+
+
+
+https://www.edmundoptics.com/c/microscopy/625/#
+	&#39;Infinity Corrected Objectives&#39;
+	&#39;Finite Conjugate Objectives&#39;
+	&#39;Reflective Objectives&#39;
+	&#39;TECHSPEC® Objectives&#39;
+	&#39;Eyepieces&#39;
+
+https://www.edmundoptics.com/c/reflective-objectives/709/#
+https://www.edmundoptics.com/f/high-performance-reflx-objectives/13550/
+https://www.edmundoptics.com/f/reflx-objectives/13142/
+	&#39;DUV Enhanced Aluminum (150-11000nm)&#39; &#39;0.33&#39; (NA)
+
+https://www.edmundoptics.com/c/infinity-corrected-objectives/629/#
+	&#39;Fluorescence&#39;
+
+https://www.edmundoptics.com/c/finite-conjugate-objectives/708/#
+	&#39;Commercial Grade Standard Microscope Objectives&#39;
+
+
+https://www.edmundoptics.com/f/accessory-tube-lenses/12619/
+	&#39;Mitutoyo Tube Lenses&#39;
+
+
+
+https://www.youtube.com/watch?v=Nxz_ENnmgtI
+	Seems to use built-in *mercury vapor* light. So we cannot expect to get away with 445nm. After all, this should be a several watt source, so efficiency is less of a concern.
+	Seems the &#39;~800nm line width&#39; is sharp enough to get to &#39;~400nm line width&#39; or better if FOV were traded for resolution.
+
+https://youtu.be/97ARLiTHjX0?t=664
+	&#39;UV blocker&#39;
+		MAJOR - Could significantly affect the lateral resolution for 2d photolithography at high resolution (or otherwise relatively high ratios of photoresist thickness and feature size) as well. This is the sort of unexpected issue which necessitates test fixtures (eg. CCD cameras) to measure performance of the optics independent of actually doing photolithography.
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/Optical_microscope
+	&#39;Polarised light may be used to determine crystal orientation of metallic objects.&#39;
+
+
+https://www.leica-microsystems.com/science-lab/metallography-an-introduction/
+	&#39;Brightfield&#39; &#39;Darkfield&#39; &#39;Differential Interference Contrast (DIC)&#39;
+
+
+https://www.researchgate.net/figure/Figure-A2-Beam-path-in-differential-interference-microscopy-The-first-Nomarski-prism_fig63_280664165
+	Apparently there should be an &#39;interference plane&#39;, presumably where an image is projected onto a diffuse surface, not shown by leica.
+
+https://openflexure.org/projects/microscope/
+
+
+
+https://arxiv.org/pdf/1806.08718.pdf
+ &#39;Microscope Projection Photolithography Based on Ultraviolet Light-emitting Diodes&#39;
+	&#39;final pattern width of the single slit was 17 um, which was about half that of the one in the photomask&#39;
+	&#39;-number of the 4X objective lens is 5.0 since its numerical aperture was 0.10&#39;
+	&#39;theoretical resolution is 2.0 μm, assuming that the wavelength is 0.40 μm&#39;
+	&#39;actual resolution limit is about 4 μm, which is close to the minimum line width measured in our experiment&#39;
+	Looks like a through-beam trinocular microscope was used. This could not have been a metallurgical microscope, and the necessity of adding a UV light source (ie. built-in the non-incident brightfield illumination could not have been) also rules out this having been a metallurgical microscope. Projecting simple photomasks instead of computer projectors is also an interesting experiment.
+
+https://gmwgroup.harvard.edu/files/gmwgroup/files/757.pdf
+ &#39;Microscope Projection Photolithography for Rapid Prototyping of Masters with Micron-Scale Features for Use in Soft Lithography&#39;
+	&#39;transparency film masks&#39; &#39;routinely&#39; &#39;down to 0.6 μm&#39;
+	&#39;100× objective&#39; &#39;limited to a circle with a radius of ∼100 μm by uneven light intensities at the edges of the image and optical distortions of the features in the mask near the edges&#39;
+	Apparently modified a flourescence microscope.
+
+
+
+
+
+https://www.instructables.com/RooBee-One-SLA-DLP-Aluminum-Frame-3D-Printer/
+	&#39;Acer X113P&#39;
+		Does not seem widely available. Suitable projectors as consumer products seem trendy, likely displaced by newer projector hardware and cheapening of many other display technologies.
+
+
+
+
+
+
+https://www.youtube.com/watch?v=waBjGxsGSg8
+	&#39;focus mechanism is electronically coupled to the camera so it only works when the camera is turned on&#39;
+
+
+
+https://www.youtube.com/watch?v=KjdJwE9pkUo
+	&#39;This rig gave me the freedom to adjust tilt, height, rotation precisely.&#39;
+		Resolution seems rather significantly degraded and distorted. Although it is possible to workaround by trading FOV for resolution.
+
+https://www.amazon.com/dp/B0047YRKK8/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
