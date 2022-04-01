@@ -185,7 +185,9 @@ https://www.ebay.com/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=microscope
 &#39;SEMI PLAN Achromatic&#39;
 &#39;WF 10x&#39; &#39;WF 25x
 https://www.ebay.com/itm/143405630452?hash=item2163a443f4:g:pDwAAOSwl9BWHUmj
-https://www.ebay.com/itm/163897106947?hash=item2629076203:g:qhYAAMXQfFJRNJSV'
+https://www.ebay.com/itm/163897106947?hash=item2629076203:g:qhYAAMXQfFJRNJSV
+https://www.ebay.com/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=microscopesind&store_name=microscopesindia&_oac=1&_nkw=plan%20-semi%20-%22s%20plan%22
+https://www.ebay.com/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=microscopesind&store_name=microscopesindia&_oac=1&_nkw=plan+-semi+-%22s+plan%22&_sop=15'
 
 
 
