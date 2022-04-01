@@ -280,6 +280,7 @@ scriptedIllustrator_markup_uk4uPhB663kVcygT0q --><!-- # --><pre style="margin-to
 https://amscope.com/collections/compound-microscopes/products/t120-wm
 https://amscope.com/collections/microscope-parts-accessories-microscope-obje
 ctive-lens-microscope-achromatic-objective-lens/products/a60x-yx-v460
+https://amscope.com/products/pa60x-v300
 https://amscope.com/products/ep25x23-s
 
 
