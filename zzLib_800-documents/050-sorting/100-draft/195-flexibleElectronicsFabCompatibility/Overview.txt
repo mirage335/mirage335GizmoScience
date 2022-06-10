@@ -1,0 +1,60 @@
+
+_ Economics _
+
+Compatibility with existing factory semiconductor fabs would likely reduce costs per neural interface by <10x, and would begin mass production a <5 years earlier, than may be possible pushing semiconductor prototyping (ie. lithoDive) into production use. However, such a benefit may only be possible to realize if the neural interface had been designed for any specialized existing tooling insisted on by the factory, and if the risk of this effort were not offset by existing factory semiconductor fab availability issues.
+
+
+_ Conclusions _
+
+By flipping expendable substrates and adding alternating conductive/insulative guard layers between electronics slivers and the expendable wafer silicon underneath, it is possible to extract thin electronics while preserving rigid positioning. Fundamentally, such is illustrative of the best possible replacement for polyamide 'flexible PCB' and pick-and-place of rigid chips.
+
+Scanning tunneling microscope of thinner alternating conductive/insulative guard layers close to electronics slivers combined with photomachining is the most accurate technique to remove as much undesired silicon as possible.
+
+Minimum possible bending radius of any materials within or very close to an electronics sliver from a standard EUVL factory is very obviously the most substantial risk. Theoretically, this is not an issue - glass nanofibers are comparably hard, low tensile strength, and apparently flexible. Two dimensional silicon based flexible electronics have been reported with >1mm bending radius, while better is obviously possible, such experiments are not yet demonstrating anything useful.
+
+SEVERE - Bending radius requirement may be <<50um.
+
+
+
+_ Explanation - Laser Cutting _
+
+Laser cutting must be avoided. Thermal ablation, especially of crystalline materials, can cause damage at distances multiple of the focal area. Photomachining (presumably wet dissolvable organic, repurposed photoresist, or UV curable resin) is strongly preferable at every opportunity.
+
+
+
+_ Explanation - Expendable Substrates _
+
+Flipping expendable substrates can convert monolithically fabricated slivers of electronics, to depanelized flexible independent chips, back to a monolithic sliver of integrated electronics. Removable slivers washed out by wet etch can also create flexible vertical traces to slivers of additional flexible electronics, such as larger numbers of threads connected to multiplexed transmission lines for neural interfaces.
+
+Removable top bonded substrates can preserve rigid positioning while small chip-like devices are depanelized and thinned for flexibility.
+
+Removable bottom bonded substrates can preserve rigid positioning while thinner than silicon (but wider pitch) thin flexible wiring (eg. polyamide or equivalent) is added (equivalent to usual wire bonded or solder ball chip package electrical contacts, but possibly neural interface threads instead).
+
+Removable top bonded substrates including contact slivers can preserve rigid positioning and include vertical wiring, allowing flexible wiring between slivers of electronics (which may be marginally necessary to increase fabricated area of device by 10%-50% as required by some in-vivo medical devices such as neural interfaces with large numbers of threads).
+
+Return to a silicon wafer for compatibility with existing fabs is possible. If the elasticity of removable (presumably wet dissolvable organic, repurposed photoresist, or UV curable resin) substrates has reduced overlay accuracy, maskless and/or low-FOV may be necessary. Specialized, lower-throughput, photolithography imaging tool, is more acceptable, if most of the fabricated area has already been completed by the earliest sliver of electronics.
+
+Vertical channels, similar to solder ball or wire bond chip contact areas, may also be useful for fabrication of low-resolution bulk components (eg. capacitors) directly on an existing chip. Such bulk components should not be necessary for non-experimental neural interfaces or other electronic medical devices (ie. flying capacitor ADCs are not necessary). Microfluidic fabrication is also possible, but usually should not require flexible substrates (ie. should not be necessary in-vivo).
+
+
+Flipping expendable substrates is the most performant replacement for the limited precision of pick-and-place of chips-on-PCB, and the limited mechanical strength of smaller solder bonds.
+
+
+
+_ Explanation - Guard Layers and Measurement _
+
+Multiple conductive/insulative guard layers under a sliver of electronics, connected to voltage sources of different frequencies or timings, allows differential signal detection of which guard layer is exposed to scanning probe, e-beam, or other voltage imaging technique. Photolithography selective etching (aka. photomachining) can use such measurement to avoid thinning the bottom side of wafers too much, preserving the sliver of electronics above. A temporary removable top side (presumably wet dissolvable organic, repurposed photoresist, or UV curable resin) substrate is expected necessary to ensure rigidity, to prevent fracturing of a not yet flexibly thin wafer, especially under gravity wafer handling.
+
+
+
+
+
+
+_ Reference _
+https://onlinelibrary.wiley.com/doi/full/10.1002/aelm.201700277
+	Illustrative.
+
+https://en.wikipedia.org/wiki/Subwavelength-diameter_optical_fibre
+
+
+
