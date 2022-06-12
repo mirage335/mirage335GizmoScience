@@ -3,7 +3,7 @@
 
 *) IPKVM should be compatible with at least some smartphones having HDMI out and USB input. Failing that, simple robotics and camera should suffice.
 
-*) Amateur radio handie-talke through RasPi or similar should suffice for uploaded or VR full-dive users to call for help if necessary... a radio direction findable distress beacon is one of the very few uses if not the only use for amateur radio.
+*) Amateur radio handie-talke through RasPi or similar should suffice for uploaded or VR full-dive users to call for help if necessary... a radio direction findable distress beacon is one of the very few uses if not the only use for amateur radio. Microphone level activation is simplest.
 
 
 
