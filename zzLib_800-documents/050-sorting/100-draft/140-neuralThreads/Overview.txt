@@ -1,0 +1,46 @@
+
+Mesh threads are proven, flexibly gripping a volume of neural tissue at anchoring intersections, but could possible have minor theoretical issues scaling to high electrode site density.
+
+*) Possible fragility. Thin wires in the mesh may have low tensie strength compared to the large volume of tissue displaced, dragged, etc.
+
+*) Possible depanelization cost. Such thin wires may necessitate repeated photomachining to separate.
+
+*) Possible fabrication area cost. Unless mesh threads are fabricated and expanded diagonally, empty space between the thin wires may be unused, but much smaller than the FOV of even a small prototyping maskless photolithography tool, wasting light and time.
+
+*) Possible fabrication area overuse. Assuming a fabricated area diameter of 35um for threads, estimates show 'neuralBits_cm2' of ~98/100 at ~3Million ES. While doable, especially if additional slivers of threads are bonded to the bundles, this is a rare case of design approaching practical manufacturing and implementation limits, likely avoidable. Manufacturing might be much less complicated, and much more reliable, otherwise.
+
+*) Possible collateral damage imposed limits to electrode site density. A 'threadGap_um' value of ~325um has been presumed reasonable, however, if the total volume displaced by any thread or needle could mostly be reduced to half of ~25um, ~4x higher electrode density might be tolerable, increasing total electrode site count much further above whatever minimum requirements may be relevant.
+
+
+_ NeuE probes _
+
+Thin wiring, thick electrode bump, woven along neural tissue.
+
+Much of the same benefit as mesh threads is very obvious. Wiring would be loose and bendable, decoupling mechanical stress, both as strain relief between thread/bundle, and complying with any cardiac/respiratory vibration between electrode sites. Thick electrode bumps combine the function of biocompatible mechanical anchor points with the electrode sites.
+
+Biocompatibility mechanically benefitting from larger electrode sites, may reduce minor design risk from either electrode impedance or small volume high surface area structures (eg. nanowires, carbon nanotubes, etc) that otherwise could corrode (ie. dissolve away) or may necessitate additional resources (eg. nanowire semiconductors from added genetic material).
+
+
+
+_ Reference _
+https://onlinelibrary.wiley.com/doi/full/10.1002/inf2.12234
+	'NeuE probes'
+	'Experiment results show that the impedances of CNT-Au nanocomposites-based microelectrode arrays (176-μm2 area, 1-kHz impedance of 50 kΩ) are 10-fold smaller than those of similar Au, which does not have CNTs.'
+
+https://www.guiltygyoza.xyz/assets/neuralink_1.png
+	Neuralink threads. Consider instead, horizontally electrodes perpendicular to thread, with space between electrodes much thinner, rather than thicker, than electrodes.
+
+https://blackrockneurotech.com/research/wp-content/uploads/2021/06/electrodes2.png
+	Looks very similar to Neuralink threads design.
+
+https://www.reddit.com/r/neuralcode/comments/g7h3ej/how_do_neuralinks_threads_compare_with_the/
+	'I know it is referenced in both the Neural Dust paper and the Anikeeva lab's recent paper: the basic idea is that about 30 microns the material/probe/device can set off the mechanical alarm of the nervous system' 'We'll have to wait to see what the immune response will be of both systems.'
+		'2 yr. ago'
+
+https://blackrockneurotech.com/neuro-devices/
+	'Materials' 'Insulators & Substrates' 'Electrodes & Conductors'
+
+https://www.prnewswire.com/news-releases/blackrock-neurotech-closes-10m-financing-round-to-advance-development-of-its-world-leading-brain-computer-interface-bci-technology-301295002.html
+	'$10M Financing Round'
+
+
