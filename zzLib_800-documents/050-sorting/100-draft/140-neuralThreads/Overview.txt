@@ -10,6 +10,7 @@ Mesh threads are proven, flexibly gripping a volume of neural tissue at anchorin
 *) Possible fabrication area overuse. Assuming a fabricated area diameter of 35um for threads, estimates show 'neuralBits_cm2' of ~98/100 at ~3Million ES. While doable, especially if additional slivers of threads are bonded to the bundles, this is a rare case of design approaching practical manufacturing and implementation limits, likely avoidable. Manufacturing might be much less complicated, and much more reliable, otherwise.
 
 *) Possible collateral damage imposed limits to electrode site density. A 'threadGap_um' value of ~325um has been presumed reasonable, however, if the total volume displaced by any thread or needle could mostly be reduced to half of ~25um, ~4x higher electrode density might be tolerable, increasing total electrode site count much further above whatever minimum requirements may be relevant.
+ *) SEVERE - Connecting stimulation points to a large fraction of neurons in vivo (eg. 100Million stimulation only ES at 1% or 1Billion stimulation only ES at 10%) could be necessary for some purposes (eg. exocortex). Mesh threads may require hollow needle diameters ~100um or worse, for which such density would impose prohibitive collateral damage.
 
 
 _ NeuE probes _
