@@ -39,7 +39,7 @@ A sense of correctness/incorrectness decoded from a neural interface may use a h
 _ Terms _
 
 Memory Interference
- Referring to simultaneous recal of multiple memories, resulting in neural recordings (of TX events) containing (eg. visual) images from multiple memories simultaneously, the temporal and spatial additive mixing of which may be beyond the resolution of a neural interface, creating difficultly decoding each specific memory from the neural recording.
+ Referring to simultaneous recall of multiple memories, resulting in neural recordings (of TX events) containing (eg. visual) images from multiple memories simultaneously, the temporal and spatial additive mixing of which may be beyond the resolution of a neural interface, creating difficultly decoding each specific memory from the neural recording.
 
 Memory Refinement
  Referring to an 'automatic' process of extracting/decoding memories from both random noise and interference noise both expected in recordings from biological neural networks having already experienced these memories.
