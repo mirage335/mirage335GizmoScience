@@ -1,0 +1,59 @@
+
+Memory refinement from memory interference is analogous to iteratively extracting individual images, from a set of images, in which all images in the set are transparently combined with some - but not all - of the other images.
+
+Consider ten images, each of which is composed of three transparent original images, and for which each desired original image is similarly present elsewhere in the set.
+
+
+
+Additive and subtractive mixing between images in such sets can iteratively find a 'pure' image, if detectable as different from 'noise'.
+
+
+
+Object recognition (taken from 'Self-Driving AI' which is trained from 'IRL' video footage) can detect the transparency effect - whether objects in an image are pure, or whether other objects that should not exist in the same space.
+
+Object resolution/detail/completeness can detect hallucinations (which are usually either missing entire features that were not added before the hallucination ended or closely match incomplete images from before the complete detail was added).
+
+Object position compared to physics and velocity modeling can detect relative timing of images and invalid hallucinations which do not fit physics or velocity between multiple other images.
+
+Social interaction prediction can detect hallucinations which did not actually happen. Practical Self-Driving AI does not need this relatively difficult capability, and is probably very far from technological readiness for this.
+
+
+A sense of correctness/incorrectness decoded from a neural interface may use a human's own cognition to improve detection of pure and valid images decoded from neural activity recordings. Humans are obviously able to quickly recognize when images are transparently composited with other images or pure.
+
+
+
+
+*) MAJOR - Automation, by random access, should be able to extract much higher resolution video images from decoding human neural activity (ie. TX events ONLY, not RPT events), by the technique of additive/subtractive mixing followed by distinguishing from noise, far beyond explicit human recall.
+ *) Human neural networks obviously have much more complete records of memory images than humans are able to explicitly recall and examine.
+  *) Humans have a stronger sense of which memories were retained from incomplete or absurd dreams (ie. hallucinations) rather than experience, although unable to explicitly recall, examine, or describe any of the incompleteness or absurdity. Reconstructive human memory, although notoriously imperfect, substantially improves recall of specific binary features, not merely consistency with models.
+
+*) MAJOR - Valid high resolution chronologically ordered video images from decoding human memory should suffice, significantly below noise floor, for some tagging of memories within neural activity recording lists, allowlist filtering of memories, and denylist cancellation (by stimulation electrode sites) of emerging memories.
+
+
+
+*) MAJOR - Both 'Memory Refinement' (an 'automatic' process) and/or 'Memory Distallation' (a 'manual' process) could result in a neural network connectome and synaptic weights containing desired 'pure' memories, which could be temporarily connected to an existing person's neural network to establish a sense of continuity. Both 'partial memory loss' and 'replacement wetware' may effect 'regeneration' by such technique, achieving the 'amortality' for lifelong 'learning and forgetting' as described by 'uTST' 'memoryRegeneration' .
+ *) MAJOR MAJOR - How many memories and how much detail could be 'refined' or 'distilled' in a practical amount of time from neural networks with measurable amounts of memory interference is the most challenging and crucial performance 'figure of merit' from a neural interface requiring maximum spatial and temporal resolution.
+
+
+
+_ Terms _
+
+Memory Interference
+ Referring to simultaneous recal of multiple memories, resulting in neural recordings (of TX events) containing (eg. visual) images from multiple memories simultaneously, the temporal and spatial additive mixing of which may be beyond the resolution of a neural interface, creating difficultly decoding each specific memory from the neural recording.
+
+Memory Refinement
+ Referring to an 'automatic' process of extracting/decoding memories from both random noise and interference noise both expected in recordings from biological neural networks having already experienced these memories.
+
+Memory Distallation
+ Referring to a 'manual' process of explicitly explaining information symbolically (eg. describing a scene verbally), which could be used to recreate a scene, for a new neural network to experience, neural recordings of which would contain (at least mostly) 'pure' memory objects as these are experienced for the first time.
+
+
+
+_ Reference _
+
+https://en.wikipedia.org/wiki/Ciphertext-only_attack
+	'All that is needed is some way to distinguish valid plaintext from random noise, which is easily done for natural languages when the ciphertext is longer than the unicity distance.'
+		FUNDAMENTAL - Memory decoding through interference must follow a similar principle, after additive/subtractive mixing steps between portions of neural activity recordings.
+
+https://en.wikipedia.org/wiki/Interference_theory#Event-related_fMRI_studies
+
