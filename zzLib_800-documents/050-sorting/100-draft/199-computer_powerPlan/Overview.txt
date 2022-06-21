@@ -1,0 +1,4 @@
+
+Idle watts of CPU (and presumably similar for GPU) can be kept <15W if maximum clock is set 45%. Suspend of computer during compressed gas purge to switch between liquid coolants (ie. from water/methanol to LN2) may not be necessary.
+
+

@@ -1,0 +1,59 @@
+
+ATX PSU -> XT90*2 and Motherboard Power Extension
+	(standard power connectors from soldered metal box)
+
+120VAC -> Automatic Transfer Switch, Millisecond, Fast, Changeover Switch, 120V -> ATX PSU
+120VAC -> LVDC -> CC CV Power Supply -> Battery/Disconnect -> Inverter -> Automatic Transfer Switch, Millisecond, Fast, Changeover Switch, 120V
+
+
+Sustains idle or low power from (presuming adequate overload and overdischarge protection) relatively weak inverter and battery. Full CPU/GPU load while more than momentarily (ie. intentionally) disconnected from power is NOT normal.
+
+
+
+
+_ Reference _
+
+https://hobbyking.com/en_us/hobbykingtm-lipoly-low-voltage-alarm-2s-6s.html
+	HobbyKing Lipoly Low Voltage Alarm (2s~6s)
+
+https://hobbyking.com/en_us/hobbykingtm-lipoly-low-voltage-alarm-2s-4s.html
+
+https://community.openmr.ai/t/best-possible-gaming-pc-for-high-end-vr-and-pimax-8kx/32469/91
+
+
+
+https://www.amazon.com/s?k=1200W+DC+DC+step+up+converter
+
+
+
+
+https://hdplex.com/hdplex-800w-dc-atx-with-12v-63vdc-input.html
+https://hdplex.com/hdplex-200w-dc-atx-power-supply-12v-30v-wide-range-voltage-input.html
+
+
+
+https://www.amazon.com/Lithium-Security-Scooters-Emergency-Lighting/dp/B09MF38GC6/
+	'AUTOMATIC BMS AND MAINTENANCE-FREE' 'No longer need a higher voltage input to activate'
+
+
+
+
+https://smile.amazon.com/TUQI-Automatic-Transfer-Generator-Changeover/dp/B087PX2X9M/
+	AR/AN, BR/BN, are apparently paralleled to the expected source terminals as sensing wires.
+
+
+https://smile.amazon.com/Generator-Portable-42000mAh-Outdoors-Emergency/dp/B0915WSJFJ/
+https://smile.amazon.com/Portable-Charger-Camping-31200mAh-Notebooks/dp/B088KDMPF5/
+	May be impractically weak, and may not default to power output without intervention. Illustrates usability of inverter, battery, and charger, through automatic transfer switch.
+
+
+
+https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/axi-series-config/p/CP-9020087-NA#tab-tech-specs
+	'Weight' '2.65'
+		Presumably kg , converts to <6lbs . Relatively lightweight, at least for the power output.
+
+
+
+
+
+
