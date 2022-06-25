@@ -1,0 +1,152 @@
+
+_ Conclusions _
+
+
+*) Embrittlement of most materials may be avoided entirely by keeping temperatures slightly above LN2. Reportedly, such materials as 'Buna-N', 'Silicone', 'Viton', 'ABS', 'Acetal', 'Delrin', etc, have embrittlement temperatures of -184degC, -168degC, etc, only slightly above LN2.
+
+
+
+_ Select _
+
+https://smile.amazon.com/gp/product/B09KKRSG89
+ 'MSI MEG Z690 Unify'
+	MUST have 4 DIMMs slots .
+
+(any of, exactly equivalent)
+https://www.newegg.com/p/pl?N=100007611%20601396890%20601397867
+https://www.newegg.com/g-skill-64gb-288-pin-ddr5-sdram/p/N82E16820374384?quicklink=true
+https://www.newegg.com/g-skill-64gb-288-pin-ddr5-sdram/p/N82E16820374383
+	'DDR5-6000'   '32GB per Module'
+	'CAS Latency 30'
+	'Voltage 1.40V'
+
+https://www.newegg.com/intel-core-i9-12900ks-core-i9-12th-gen/p/N82E16819118392
+	MUST be 'BX8071512900KS' (hopefully might get AVX-512)
+
+https://www.newegg.com/p/2YM-009D-00112
+	'MSI GeForce RTX 3090 TI SUPRIM X 24G GAMING X TRIO 24G'
+https://www.msi.com/Graphics-Card/GeForce-RTX-3090-Ti-SUPRIM-X-24G
+	'GeForce RTX' '™' '3090 Ti SUPRIM X 24G'
+	'RTX 3090 Ti'
+	'1950 MHz'
+
+
+https://smile.amazon.com/gp/product/B09Q6FPZMD
+ CPU Heatsink
+
+https://smile.amazon.com/gp/product/B0787G1Z74
+ PSU
+
+
+
+TODO: PSU chassis.
+
+TODO: Slim temporary chassis.
+
+
+
+
+
+TODO: Tee adapters for parallel coolant.
+TODO: Chassis coolant takeoff.
+TODO: Radiator (choose to match PSU chassis) . https://smile.amazon.com/s?k=Alphacool+radiator&i=electronics&crid=38OVLJY419X1L
+
+
+
+
+
+
+https://smile.amazon.com/gp/product/B003M03VOC
+https://smile.amazon.com/gp/product/B003M07S46
+	Presumably compatible replacement for EK-QDC quick disconnect fittings.
+
+
+
+
+
+
+_ Select - Experimental _
+
+(preferred)
+https://smile.amazon.com/XGIMI-Elfin-Projector-Portable-Supported/dp/B098WT6DW2
+https://www.youtube.com/watch?v=A48ZOUKfwZw
+	Projector...
+
+https://smile.amazon.com/dp/B0884W79YH
+	Projector...
+
+https://smile.amazon.com/AAXA-Theater-Projector-Resolution-Portable/dp/B07PQMQ7ZV/
+	Projector...
+
+
+https://smile.amazon.com/OREI-Out-HDMI-Splitter-Distributor/dp/B093QM3QKZ
+https://smile.amazon.com/Splitter-Amplifier-1080P-Blu-Ray-Player/dp/B082CXZP71
+	HDMI Splitter...
+
+
+https://smile.amazon.com/llano-Bi-Directional-Switcher-Splitter-Supports/dp/B09PT97CQK
+	HDMI Switch...
+
+
+
+
+
+https://www.primochill.com/products/copper-tubing-soft-3-8in-id-by-1-2in-od-1-foot?_pos=2&_sid=1625535e4&_ss=r
+
+https://www.primochill.com/products/primochill-copper-tubing-bender-1-2in-7-8in?_pos=1&_sid=1625535e4&_ss=r
+
+https://www.primochill.com/products/bykski-copper-tube-cutting-tool-b-mttp-shr?_pos=3&_sid=1625535e4&_ss=r
+
+
+
+O-Ring compression fittings may be temporarily acceptable until flare fittings can be proven. Silicone o-rings may be retrofitted.
+
+Flare fittings should be avoidable if temperatures are kept slightly above LN2.
+
+
+
+TODO: Sealed box chassis (lower noise, dampening, etc).
+
+
+
+
+
+
+https://smile.amazon.com/dp/B00SK8KAMM/?coliid=I1SJA46CADC74V
+https://smile.amazon.com/dp/B00SK8OO6U/?coliid=I3FLJMUUSEYKHM&colid=3OTBRPJLKJWP5&psc=1&ref_=lv_ov_lig_dp_it
+https://smile.amazon.com/dp/B00SK8QR8S/?coliid=I1M47IQG1CGKC4&colid=3OTBRPJLKJWP5&psc=1&ref_=lv_ov_lig_dp_it
+	Breadboards...
+
+
+https://smile.amazon.com/Cable-Matters-2-Pack-Extension-Power/dp/B01DV1Z4EQ
+https://smile.amazon.com/StarTech-8-Inch-Power-Extension-ATX24POWEXT/dp/B000FL60AI
+	Extension cable...
+
+
+
+https://hobbyking.com/en_us/nylonxt90connectorsmale-female-5pairs.html
+https://hobbyking.com/en_us/nylon-xt90-connectors-male-female-5-pairs-black-1.html
+	XT90...
+
+
+
+
+
+https://smile.amazon.com/LINKUP-RX6900XT-High-Speed-Gen4%E2%94%83Universal-Compatible/dp/B08XN26DRZ
+https://smile.amazon.com/ASUS-ROG-Flexible-Extender-Extension/dp/B082G52H1L
+	PCI-E risers...
+
+
+https://smile.amazon.com/EK-Thermosphere-Water-Block-Nickel-Plexi/dp/B00KGKLLYS
+
+
+
+
+
+
+_ Reference _
+
+https://en.wikipedia.org/wiki/Embrittlement
+	'Silicone' '−184.4' degC
+
+

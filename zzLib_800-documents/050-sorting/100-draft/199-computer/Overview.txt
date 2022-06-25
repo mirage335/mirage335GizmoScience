@@ -1,4 +1,9 @@
-*) At least 96GB RAM for VR workstation - combination VR, browser, and virtualization.
+*) At least, 96GB RAM, strongly prefer 128GB RAM for VR workstation - combination VR (>>32GB), browser (32GB), virtualization (<12GB, PanelVM), other VMs suspended).
+ *) TeamViewer and such may obviate 2*12GB VMs .
+ *) Abnormal builds (eg. Gentoo) would require <~32GB/8thread .
+
+
+*) MAJOR - Maximum RAM clock is VERY substantially necessary.
 
 
 *) IPKVM should be compatible with at least some smartphones having HDMI out and USB input. Failing that, simple robotics and camera should suffice.
@@ -8,4 +13,442 @@
 
 
 *) SEVERE - SATA chipset can cause severe kernel latency (~15s)... such 'motherboard' hardware peripherials must be avoided carefully.
+
+
+
+*) Upgrade or hardware reconfiguration (especially disabling memory modules) may be necessary. Any solder sealing a metal chassis must be removable.
+
+*) Liquid cooling must also cool RAM, there is significant evidence of clock rate performance benefit.
+
+
+
+
+_ Select _
+
+https://www.msi.com/Motherboard/MEG-Z690-UNIFY
+	MUST have 4 DIMMs slots .
+
+(any of, exactly equivalent)
+https://www.newegg.com/p/pl?N=100007611%20601396890%20601397867
+https://www.newegg.com/g-skill-64gb-288-pin-ddr5-sdram/p/N82E16820374384?quicklink=true
+https://www.newegg.com/g-skill-64gb-288-pin-ddr5-sdram/p/N82E16820374383
+	'DDR5-6000'   '32GB per Module'
+	'CAS Latency 30'
+	'Voltage 1.40V'
+
+https://www.newegg.com/intel-core-i9-12900ks-core-i9-12th-gen/p/N82E16819118392
+	MUST be 'BX8071512900KS' (hopefully might get AVX-512)
+
+https://www.newegg.com/p/2YM-009D-00112
+	'MSI GeForce RTX 3090 TI SUPRIM X 24G GAMING X TRIO 24G'
+https://www.msi.com/Graphics-Card/GeForce-RTX-3090-Ti-SUPRIM-X-24G
+	'GeForce RTX' '™' '3090 Ti SUPRIM X 24G'
+	'RTX 3090 Ti'
+	'1950 MHz'
+
+
+
+
+
+
+
+
+
+
+_ Candidates _
+
+https://www.msi.com/Motherboard/MEG-Z690-UNIFY
+	4x DIMMs DDR5. Benchmarks may fall slightly behind some or other ASUS MB.
+
+https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-extreme-model
+
+
+
+https://www.ekwb.com/shop/ek-quantum-velocity2-d-rgb-1700-full-nickel
+
+
+
+
+https://www.evga.com/products/productlist.aspx?type=0&family=GeForce+30+Series+Family&chipset=RTX+3090+Ti
+	'1920 boost clock'
+	'RTX 3090 Ti'
+
+https://www.msi.com/Graphics-Card/GeForce-RTX-3090-Ti-SUPRIM-X-24G
+	'1950 MHz'
+	'RTX 3090 Ti'
+
+https://www.gigabyte.com/Graphics-Card/GV-N309TAORUSX-W-24GD#kf
+	'1935 MHz'
+	'RTX 3090 Ti'
+
+
+
+
+
+
+https://www.ekwb.com/shop/ek-thermosphere-nickel
+	'Universal VGA waterblocks'
+
+
+
+https://www.amazon.com/Phanteks-PH-GB3090TiAS_BK01_BP-Nickel-Plated-Aluminum-Digital-RGB/dp/B0B1P66VXD/
+
+
+
+
+
+https://www.newegg.com/p/2YM-009D-00112
+	'MSI GeForce RTX 3090 TI SUPRIM X 24G GAMING X TRIO 24G'
+https://www.msi.com/Graphics-Card/GeForce-RTX-3090-Ti-SUPRIM-X-24G
+	'GeForce RTX' '™' '3090 Ti SUPRIM X 24G'
+	'RTX 3090 Ti'
+	'1950 MHz'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_ Reference _
+
+
+https://www.xda-developers.com/intel-13th-gen-raptor-lake/
+	'13th-gen Raptor Lake CPUs will use the same LGA1700 CPU socket used by Alder Lake chips'
+
+https://www.techadvisor.com/article/743373/intel-raptor-lake-13th-gen-everything-we-know-so-far.html
+	'Core i9-13900K' 'maximum clock speed of 5.8GHz'
+
+https://www.digitaltrends.com/computing/samsung-developing-ddr6-gddr7-twice-as-fast/
+ 'November 19, 2021'
+	'DDR6 is already in the works, and it’s four times as fast as DDR4'
+	'report mentions that the completion of the standard could materialize in 2024, but it’s more likely that 6th-gen DDR memory arrives in either 2025 or 2026 considering that DDR5 has only just launched recently (and is already affected by supply issues)'
+
+
+https://arstechnica.com/gadgets/2022/03/5-5-ghz-core-i9-12900ks-is-intels-fastest-and-most-power-hungry-desktop-cpu/
+	'5.5 GHz'
+
+https://pcpartpicker.com/b/fyjp99
+	'was able to do a simple Thermal Velocity boost to get speeds of 5.6Ghz on 6 P cores, with the other 2 P cores turbo to 5.5Ghz. E cores are going great at 4.1Ghz turbo boost'
+		'E cores' should be disabled anyway.
+
+
+
+https://www.techreviewer.com/tech-specs/chipsets-for-intel-12900k/#which-chipsets-are-compatible-with-the-core-i9-12900k-processor
+
+
+https://wccftech.com/intel-core-i9-12900ks-overclocked-7-45-ghz-msi-z690-unify-x-breaks-several-benchmark-records-with-asrock-z690-aqua-oc-motherboard/
+	'MSI MEG Z690 Unify-X'
+
+https://appuals.com/best-motherboards-for-i9-12900k/
+	'Gigabyte' 'ASUS' "MSI'
+
+
+
+
+https://www.tomshardware.com/features/ddr5-vs-ddr4-is-it-time-to-upgrade-your-ram
+	'DDR5-4800 C40 was 19% and 14% faster than DDR4-2133 C15 and DDR4-3200 C22, respectively.'
+
+
+
+
+https://www.msi.com/Motherboard/MPG-Z690-CARBON-WIFI/Specification
+	'DDR5 Memory' '6666(OC)/ 6600(OC)/ 6400(OC)/ 6200(OC)/ 6133(OC)/ 6000(OC)/ 5800(OC)/ 5600(OC)/ 5400(OC)/ 5333(OC)/ 5200(OC)/ 5066(OC)/ 5000(OC)/ 4800(JEDEC) MHz'
+	'Max Memory (GB)' '128'
+	'4x DDR5 memory slots, support up to 128GB'
+		'1DPC 1R Max speed up to 6666+ MHz'
+		'1DPC 2R Max speed up to 5600+ MHz'
+		'2DPC 1R Max speed up to 4000+ MHz'
+		'2DPC 2R Max speed up to 4000+ MHz'
+	'Wi-Fi 6E'
+	'Z690 Chipset'
+
+https://www.msi.com/Motherboard/MPG-Z690-CARBON-WIFI/support#mem
+	Seemingly nothing >16GB.
+
+https://www.reddit.com/r/intel/comments/u3zacd/has_anybody_tried_128gb_ddr5/
+	'Haven’t heard about anyone with that much, but as 32gb modules are dual ranked, know that the official Intel supported speed for that configuration is just 3600mhz, so even getting it to run reliably at 4800 may be a challenge (never mind the 5600 that you seem to be able to get 32gb modules in right now).' -'Materidan'
+	'Answer: I tried it, but it works only at lower speeds and a lot of time sunk for testing: https://www.reddit.com/r/intel/comments/uqcn00/tried_128gb_ddr5_on_12th_gen_alder_lake_it/?' -'rayw_reddit' 'Op'
+	'DDR5 is supposed to offset quad channel DDR4 in bandwidth and also have the ability to reach higher capacities than 8 udimms of DDR4.'
+
+https://www.reddit.com/r/intel/comments/uqcn00/tried_128gb_ddr5_on_12th_gen_alder_lake_it/
+	'Dropped memory frequency to 4400 MHz, and it all passed.' 'decided to stick with 2x 32 @ 5600 instead' -'Posted by u/rayw_reddit'
+	'2 DIMM per channel support at DDR5 speeds is pretty sketchy. Take a look at the QVL for your motherboard' 'Essentially everything is only rated for 2 DIMMs. They support a single 4 DIMM configuration and its only 64 GB.' -'saratoga3'
+	'I had the same result with Micron kits in a Aorus Master. XMP-II works out of the box no problem at 4400MHz when loaded to 128GB.'
+
+https://www.anandtech.com/show/17047/the-intel-12th-gen-core-i912900k-review-hybrid-performance-brings-hybrid-complexity/12
+	'DDR4-3200 CL22' 'DDR5-4800B CL40*'
+	'4800B CL40 technically only applies to 1 module per 64-bit channel on the motherboard, and only when the motherboard has two 64-bit slots to begin with'
+	'while we don't see much improvement in single threaded workloads, there are a number of multi-threaded workloads that would love the increased performance'
+		Some relevant memory tasks (eg. GPU load/unload) may use inherently multithreaded libraries.
+
+https://www.tomshardware.com/features/intel-alder-lake-ram-guide-ddr4-ddr5
+	Shows some significant benefit from 4 * DDR5 DIMMS, and some benefit from DDR5-4800 instead of DDR4-3600 .
+		More than a hint that memory latency is vastly more important than clock or dual/single channel bandwidth.
+	'Gear' ...
+
+https://ark.intel.com/content/www/us/en/ark/products/225916/intel-core-i912900ks-processor-30m-cache-up-to-5-50-ghz.html
+	'Max # of Memory Channels' '2'
+	'Max Memory Bandwidth' '76.8 GB/s'
+
+https://www.intel.com/content/www/us/en/support/articles/000056722/processors/intel-core-processors.html
+	Calculations confirm specifications for i9-12900ks indeed rule out actual quad channel memory on two counts, (3200 / 2) * 2 * 8 * 2 = 51200 , (3200 / 2) * 2 * 8 * 4 = 102400 (out of spec) .
+	Calculations confirm equation for DDR5 memory bandwidth, matching '76.8 GB/s' specification, (4800 / 2) * 2 * 8 * 2 = 76800 .
+
+https://www.hardwaretimes.com/ddr5-vs-ddr4-ram-quad-channel-and-on-die-ecc-explained/
+
+
+
+https://forum.dcs.world/topic/244584-does-ram-speed-matters-in-dcs/
+	'So, it does make a difference, but only really noticeably in 'busy' areas--close to the ground (high LOD) and lots of complex objects such as aircraft. It's what I would have suspected, since Windows has to use some (or a lot) of your system RAM as if it were video memory, despite having a hefty amount of video memory, 11GB (same graphics card as me).'
+
+https://youtu.be/CCRfIHT9LCY?t=205
+	'packed with parked aircraft' 'DDR4@1600' '79FPS'   'DDR4@2400' '97FPS'   'DDR4@3200' '114FPS'
+		SEVERE - Very substantial indeed.
+	'i7-9700k'
+
+https://www.tomshardware.com/reviews/gskill-trident-z5-rgb-ddr5-6400-c32-review
+	'42mm'
+	'32GB (2 x 16GB)'
+	'6600' 'overclocking'
+
+
+
+https://www.youtube.com/watch?v=Scf-o0ipBsw
+	'ASUS' 'hero' 'resistors that were on there backwards'
+		Resistors? Or reverse polarity capacitors?
+	'evga' 'solder joint that was failing under high load conditions'
+
+
+
+
+
+
+https://www.anandtech.com/show/17078/intel-alder-lake-ddr5-memory-scaling-analysis/3
+	Clearly shows substantial difference between DDR5-6000 and DDR5-6400, on top of the expectation of four DIMMs of 128GB total not reaching officially specified clocks.
+	'unless you’re CPU-bound. (And with today’s CPUs: you almost always aren’t.)'
+		Every application for which performance counts most, this is the most serious issue.
+
+
+
+
+https://www.cgdirector.com/2-vs-4-ram-modules/
+	'easier to push higher memory speeds and lower CAS latencies with fewer sticks'
+
+https://twitter.com/buildzoid1/status/1492839093977460740
+
+
+
+
+
+https://www.pcmag.com/news/ddr5-vs-ddr4-how-much-performance-will-you-gain-from-todays-newest-ram
+	'cycles twice as fast' 'DDR5-4800 CAS 40 can only be as quick as DDR4-2400 CAS 20, which would in turn still be laggier than the slowest DDR4-2400 at CAS 18' 'But there’s more to it than that!'
+		Implies DDR5 timings are equivalent to half timings from DDR4.
+
+
+
+
+
+https://www.tweaktown.com/news/85837/msi-goes-ballistic-ddr5-10004-speeds-hit-on-meg-z690-unify-mobo/index.html
+	'stock frequency of DDR5-4800 up to an insane DDR5-10004'
+	'down to 4 cores and a 425MHz CPU clock'
+
+
+
+
+
+https://www.techpowerup.com/review/intel-core-i9-12900ks/21.html
+	MAJOR MAJOR - 'Unlike other Alder Lake processors, including the Core i9-12900K, the KS has its out-of-the-box default thermal limit set to 115°C, not 100°C. 115°C is the highest manual setting you can pick in the BIOS for all Alder Lake CPUs.' 'Since this is the default setting, Intel's warranty will cover operating the processor at up to 115°C'
+	MAJOR - 'settled for 1.35 V' 'had to dial down the voltage a little bit'
+
+https://rog.asus.com/forum/showthread.php?126905-12900K-safe-voltages
+
+
+https://en.overclocking.com/review-msi-meg-z690-unify-x/4/
+	'advise you to respect the Load Line Calibration suggestion and not to exceed 1.30 volts'
+
+
+
+
+
+https://www.tweaktown.com/news/85126/intel-core-i9-12900ks-processor-ships-but-get-this-ahead-of-embargo/index.html
+	'SRLDD'
+
+https://www.intel.com/content/www/us/en/products/sku/225916/intel-core-i912900ks-processor-30m-cache-up-to-5-50-ghz/ordering.html
+	MAJOR - 'BX8071512900KS' ?
+
+https://www.tomshardware.com/news/how-to-tell-which-alder-lake-cpus-have-avx-512
+	'MSI' 'microcode switcher'
+
+
+https://github.com/zingaburga/alderlake_avx512/wiki?s=09
+	'Enabling AVX-512 on Alder Lake'
+
+
+
+
+
+
+https://www.newegg.com/p/pl?N=100007611%20601396890%20601404062
+	'DDR5-6600'   '2x16GB'
+
+https://www.newegg.com/p/pl?N=100007611%20601396890%20601397864
+	'DDR5-6400'   '2x16GB'
+
+https://www.newegg.com/p/pl?N=100007611%20601396890%20601397868
+	'DDR5-6200'   '2x16GB'
+
+https://www.newegg.com/p/pl?N=100007611%20601396890%20601397867
+https://www.newegg.com/g-skill-64gb-288-pin-ddr5-sdram/p/N82E16820374384?quicklink=true
+https://www.newegg.com/g-skill-64gb-288-pin-ddr5-sdram/p/N82E16820374383
+	'DDR5-6000'   '32GB per Module'
+	'CAS Latency 30'
+	'Voltage 1.40V'
+
+
+
+https://www.newegg.com/p/pl?N=100007611%20601386107%20601275376%20601275379%20601304214
+	'DDR4-4600' '32GB per module' '64GB per Module'
+		Seems not worthwhile.
+
+https://www.newegg.com/g-skill-64gb-288-pin-ddr4-sdram/p/N82E16820374212?quicklink=true
+https://www.newegg.com/g-skill-64gb-288-pin-ddr4-sdram/p/N82E16820374231?quicklink=true
+https://www.newegg.com/g-skill-64gb-288-pin-ddr4-sdram/p/N82E16820374241?quicklink=true
+	'DDR4 4600' 'Timing 20-30-30-50' 'CAS Latency 20' 'Voltage 1.55V'
+		Seems not worthwhile.
+
+
+
+
+
+
+https://www.msi.com/Motherboard/MEG-Z690-UNIFY-X
+https://www.msi.com/Motherboard/MEG-Z690-UNIFY
+	Prefer 4 DIMMs if 128GB may be required.
+
+https://rog.asus.com/motherboards/rog-maximus-series?FilterLevelTagId=77&tagID=2715&items=&inStock=
+https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-hero-model/spec
+https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-extreme-model/spec
+https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-extreme-glacial-model/spec
+	'4 x DIMM, Max. 128GB, DDR5 6400+(OC)'
+		Not 6600. May or may not be meaningful.
+
+https://rog.asus.com/motherboards/rog-strix/rog-strix-z690-e-gaming-wifi-model/spec
+
+
+
+
+
+https://us.msi.com/Motherboard/MPG-Z690-CARBON-EK-X
+https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z690-extreme-glacial-model/
+	Dubious. Many compromises may be significant.
+
+
+
+
+
+https://en.overclocking.com/review-msi-meg-z690-unify-x/7/
+	... seems to have simplified cpu clock settings... may not be able to configure specific cores
+	'the new EK-Quantum Velocity² waterblock' 'lose/gain almost 7 degrees'
+	'For memory overclocking, there are 5 key voltages.'
+
+
+
+https://www.ekwb.com/shop/ek-quantum-velocity2-d-rgb-1700-full-nickel
+
+
+
+
+https://www.tomshardware.com/reviews/asus-rog-z690-extreme-review/3
+	'VRM temperatures were surprisingly close between the air-cooled Extreme and water-cooled Glacial. The air-cooled Extreme topped out around 47 degrees Celsius during stock testing and 48 degrees Celsius when overclocked. The Glacial peaked at 43 degrees stock and 45 degrees when overclocked.'
+	...
+	MSI Unify scores better in some benchmarks. So, maybe MSI Unify?
+
+
+
+https://www.evga.com/products/ProductList.aspx?type=0&family=GeForce+30+Series+Family&chipset=RTX+3090+Ti
+
+
+
+
+
+
+https://www.youtube.com/watch?v=ToTWaZtGOj8
+https://youtu.be/ToTWaZtGOj8?t=396
+https://youtu.be/ToTWaZtGOj8?t=415
+	MAJOR - Removing GPU heat better by water cooling makes the RAM chips not hot either. At least for gaming.
+	MAJOR - 'GPU itself ended up being cooler thanks to the additional contact area on the back of the card'
+		MAJOR - SEVERE - Could complicate low-temperature cooling and reduces performance when low-temperature compatible cooling is used at ambient.
+
+
+
+
+https://shop.bitspower.com/index.php?route=product/product&path=67_102&product_id=7990
+https://shop.bitspower.com/index.php?route=product/category&path=67_100
+
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=aS8SVC9LQcY
+ 'We're modding the 3090 Ti Strix from AIO to Custom Water Cooling'
+
+https://www.youtube.com/watch?v=yECs_L8bom8
+https://videocardz.com/press-release/phanteks-launches-waterblocks-for-gigabyte-geforce-rtx-3090-ti-aorus-xtreme
+ 'PHANTEKS Glacier G3090Ti Water Block Installation | Asus RTX 3090 Ti TUF OC'
+ 'Phanteks waterblocks for RTX 3090 Ti AORUS Xtreme will be available by the end of June'
+
+
+https://preview.redd.it/annmxzvqg1r71.jpg?width=4032&format=pjpg&auto=webp&s=080fadf64309d1c82cf6ac5d97d3f169ce7b52b4
+
+
+
+From 'Watercooling Enthusiasts' Discord channel...
+
+User 'Arter'...
+Gave screenshot to Bykski GPU Waterblock for MSI GeForce RTX 3090 Ti SUPRIM X24G GAMING X TRIO 24G
+
+User 'Petewig [dead inside]'...
+	'Alphacool makes some as well'
+
+
+
+https://www.newegg.com/p/2YM-009D-00112
+	'MSI GeForce RTX 3090 TI SUPRIM X 24G GAMING X TRIO 24G'
+https://www.msi.com/Graphics-Card/GeForce-RTX-3090-Ti-SUPRIM-X-24G
+	'GeForce RTX' '™' '3090 Ti SUPRIM X 24G'
+	'RTX 3090 Ti'
+	'1950 MHz'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

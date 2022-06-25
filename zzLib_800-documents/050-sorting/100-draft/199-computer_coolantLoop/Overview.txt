@@ -1,0 +1,225 @@
+
+Cryogenic cooling can improve single-thread (ie. CPU single-core) and single-device (ie. off-the-shelf single GPU) performance by ~50%. As transistor speed improvements inevitably ends completely due to scanning probe and electron scattering manufacturing feasibility limits or (unrealistically) single-atom physical limits, cryogenic cooling *WILL* be the ONLY widely available means of getting fast computers. In all probability, widely available cooling will switch from air, to water, to LN2, while avoiding LHE, as air cooling has already become a significant fraction of high-performance chip costs, and the cost difference of LN2 is not much higher.
+
+Cryogenic computer cooling is now an inevitable next step, with the usual incentives for early adopters.
+
+Compatibility with cryogenic cooling should not be difficult. Water vapor must be excluded, and copper (ie. embrittlement) is already the preferred coolant loop material.
+
+
+_ Conclusions _
+
+Chilling a transfer fluid (eg. methanol, refined diethyl ether starter fluid, etc) other than LN2, with LN2, is either preferable or at least an appropriate intermediate technology.
+
+Fittings and pump must be compatible with LN2 temperatures.
+
+Fittings height must be *strictly* limited to keep computer thin.
+
+
+
+
+_ DUBIOUS _
+
+Proprietary software configuration breakage (eg. display configuration) and proprietary software licensing are the most significant reasons keep hardware the same, switching coolant, instead of switching the disk (electrically or physically). Dubious. Only some specialized use cases (eg. simulation, CAD modeling, gaming, etc) have such issues.
+
+That said, in the absence of such machines being common place, for a single person, the capital expenditure can be less with such portability and adaptability.
+
+
+_ Expectations _
+
+Switch to LN2 from room-temperature coolant
+1) Idle or suspended thermal load. Chassis gas must minimize frost and differential thermal expansion stress - dry, thermally conductive, noncorrosive (ie. helium), and cold (<15degC).
+2) Chilled compressed gas <<-75degC purge room-temperature liquid coolant.
+3) Switch solenoids/valves to LN2.
+4) Pump LN2 increasingly until boiling rate is regular.
+5) Allow full thermal load.
+
+Low-temperature (ie. ~-196degC) coolant liquid (eg. organic or silicone fluids?) would be preferred to avoid either of several possible alternatives:
+*) Differential thermal expansion stress from switching quickly to much colder coolant (particularly for ~15W idle powered systems).
+*) Software complexities of reliable automatic suspend/resume/etc .
+*) Hardware complexities of valving from cryogenic gas to boiling cryogenic liquid.
+*) Helium or hydrogen gas cooling (pressurized through water cooling blocks due to thermal conductivity) to below LN2 boiling temperature.
+
+If cost is less than person-hours using the computer, and if electronics can endure a reasonable few years, then LN2, hydrogen gas, or other cryogenic coolant, from a central source, may be used continuously instead.
+
+
+Corrosive liquid coolants (eg. methanol) may necessitate inspection not possible with pure copper heatsinks (ie. acrylic forbidden). An unused heatsink with minimal flow may be placed on the non-cryogenic side as an indicator of relevant failures, or such failure may simply be inferred from degraded cooling.
+
+
+
+
+
+
+_ Conclusions _
+
+
+*) Embrittlement of most materials may be avoided entirely by keeping temperatures slightly above LN2. Reportedly, such materials as 'Buna-N', 'Silicone', 'Viton', 'ABS', 'Acetal', 'Delrin', etc, have embrittlement temperatures of -184degC, -168degC, etc, only slightly above LN2.
+
+
+
+
+
+
+
+_ Candidates _
+
+https://www.primochill.com/products/copper-tubing-soft-3-8in-id-by-1-2in-od-1-foot?_pos=2&_sid=1625535e4&_ss=r
+
+https://www.primochill.com/products/primochill-copper-tubing-bender-1-2in-7-8in?_pos=1&_sid=1625535e4&_ss=r
+
+https://www.primochill.com/products/bykski-copper-tube-cutting-tool-b-mttp-shr?_pos=3&_sid=1625535e4&_ss=r
+
+
+
+O-Ring compression fittings may be temporarily acceptable until flare fittings can be proven. Silicone o-rings may be retrofitted.
+
+
+
+
+
+
+
+
+
+_ Examples _
+
+https://www.ekwb.com/shop/ek-quantum-velocity2-d-rgb-1700-full-nickel
+	'G1/4'
+
+https://www.msi.com/Graphics-Card/GeForce-RTX-3090-Ti-SUPRIM-X-24G
+https://www.newegg.com/p/2YM-009D-00112
+	Acrylic and other parts may not be LN2 compatible, but tempoarily, this is useful to adequately cool RAM chips until something can be done about that.
+	...
+	'2pcs G1/4 SILVER nikel plated copper Compression Fittings for 14mm OD hard/rigid tubings are included'
+
+https://www.ekwb.com/shop/ek-thermosphere-nickel
+	Acrylic top might be replaceable. In any case, may be a good example of a 'universal' waterblock which does not cover the RAM chips or other areas that may be sensitive to low temperature (ie. especially electrolytic capacitors).
+
+
+
+
+
+
+
+
+
+_ Reference _
+
+https://chemistry.stackexchange.com/questions/27027/lowest-freezing-point-room-temperature-liquid
+https://en.wikipedia.org/wiki/N,N-diethylmethylamine
+https://www.fishersci.ca/shop/products/n-n-diethylmethylamine-98-thermo-scientific-1/p-110100
+
+https://en.wikipedia.org/wiki/Hydrogen-cooled_turbo_generator
+	'For the highest power generators, up to 1800 MW, hydrogen and water cooling is used; the rotor is hydrogen-cooled, the stator windings are made of hollow copper tubes cooled by water circulating through them.'
+
+https://en.wikipedia.org/wiki/List_of_boiling_and_freezing_information_of_solvents
+
+https://en.wikipedia.org/wiki/Diethyl_ether
+https://en.wikipedia.org/wiki/Starting_fluid
+https://smile.amazon.com/s?k=diethyl+ether&crid=1ARML5MOJEDCC&sprefix=diethyl+et%2Caps%2C1082&ref=nb_sb_noss_2
+	'starting fluid'
+	'Diethyl ether, with a small amount of oil, a trace amount of a stabilizer and a hydrocarbon propellant has been used to help start internal combustion engines because of its low 160 °C (320 °F) autoignition temperature'
+		Presumably any impurities that could freeze in a cooling loop could be removed by that simple freezing.
+
+
+http://s7d9.scene7.com/is/content/GenuinePartsCompany/716677pdf?$PDF$
+https://www.napaonline.com/en/p/MAC7216
+
+
+
+https://www.youtube.com/watch?v=7LtPurAiR1I
+	'bulk' 'sanding' 'before' 'bending' '400grit sandpaper' 'polishing with some brasso' 'brass lacquer'
+	'tube bender' 'large radius' 'crush' 'filling with sand' 'grease'
+		Large bends may be unacceptable in this situation.
+
+
+
+https://www.primochill.com/search?q=NOT%20tag%3A__gift%20AND%20copper%20tubing%2A&type=product%2Carticle
+
+https://www.homedepot.com/b/Plumbing-Pipe-Fittings-Pipe-Copper-Pipe/Coil/N-5yc1vZ1z18i44Z1z1b3xh
+
+https://smile.amazon.com/s?k=soft+coiled+copper+tubing+type+k
+
+
+
+
+https://www.youtube.com/watch?v=ZYLL5f_NBT8
+	'1.5Vcore' '2.35' 'Vin'
+		IIRC at 'absolute maximum ratings' specs, which would assume cooling is sufficient to remove watts and no benefit from reducing thermal dissipation.
+	'-85' 'this CPU can do about -100'
+		Disappointing. May simply stay with chilled methanol cooling.
+	'socket heater' 'not one crash' 'if it didn't have that socket heater it would have been done a long time ago'
+		Seems undesirable.
+	'ring ratio to 37' 'all the CPU multipliers to 57' 'all the cores to the same ratio' 'EVGA elite utility'
+
+
+https://www.youtube.com/watch?v=kgnfvb2t-TQ
+	'look at the 12V line and see how much current's being pushed' 'near instant' 'response'
+		MAJOR - CPU and GPU cooling must be separate. Might as well separate chassis cooling. More extensive than the sketch presented for 'cryogenic computer', but not unpredictable or unexpected.
+		MAJOR - Anticipatory 'PID' cooling. Instead of sensing power physically, modern CPUs and GPUs should have sufficient software readouts to instrument this accurately, if necessary.
+
+
+https://youtu.be/9TTqxXxIpPY?t=67
+
+https://youtu.be/9TTqxXxIpPY?t=105
+	Looks like teflon tape.
+
+https://youtu.be/9TTqxXxIpPY?t=110
+	No pump. Pressurization of LN2 tank forces liquid into a tube presumably open at bottom inside tank. Relief valves control pressurization mechanically. Solenoid valves control flow of LN2. Second tank (relatively unpressurized) recovers remaining LN2 liquid.
+		Loop could be closed by recovering N2 gas from relief valves, and periodically raising a recovery tank by winch to dump that LN2 liquid back to source.
+
+
+https://www.youtube.com/watch?v=bedg1qp-F4M
+
+
+
+https://www.sciencedirect.com/topics/earth-and-planetary-sciences/embrittlement
+	'20K' 'Austenitic steels are suitable, also aluminum or brass.'
+
+https://en.wikipedia.org/wiki/Austenitic_stainless_steel
+	'enough austenite stabilizing elements such as nickel, manganese and nitrogen'
+
+
+https://www.pegasusautoracing.com/document.asp?DocID=TECH00098
+	'Dowty seals should only be used on ports without a chamfer, while O-rings should only be used on chamfered ports.'
+		PTFE tape may allow sufficient mechanical deformation tightening to avoid O-rings.
+
+
+
+
+https://www.xda-developers.com/intel-13th-gen-raptor-lake/
+	'13th-gen Raptor Lake CPUs will use the same LGA1700 CPU socket used by Alder Lake chips'
+
+
+
+
+
+
+
+
+https://www.ekwb.com/shop/ek-hfb-fitting-10mm-black#
+	While experience with these has been excellent for water cooling, the O-rings may not be sufficiently low temperature compatible.
+	
+	'thread: G1/4" BSP; 4.5mm male thread lenght'
+	'supported tube: 10mm (ID; roughly equalls 3/8" ID)'
+	'outer diameter of the tube: unlimited'
+	'nickel-plated CNC machined brass' 'quality O-rings while the ring is made from CNC machined aluminium'
+		O-rings may not be cryogenically compatible.
+
+https://www.ekwb.com/shop/ek-duraclear-9-5-15-9mm-3m-retail
+	'Material: PVC'
+	'Operating temperature range: -20°C to 80°C'
+
+
+https://en.wikipedia.org/wiki/Embrittlement
+	'Silicone' '−184.4' degC
+
+
+
+
+
+
+
+
+
+
+
