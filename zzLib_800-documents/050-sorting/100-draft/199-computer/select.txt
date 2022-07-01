@@ -38,18 +38,20 @@ https://smile.amazon.com/gp/product/B0787G1Z74
  PSU
 
 
-
+(abandoned)
 TODO: PSU chassis.
 
+(abandoned)
 TODO: Slim temporary chassis.
 
 
 
 
+https://smile.amazon.com/dp/B01HQ8KV0M
+	Chassis coolant takeoff.
 
-TODO: Tee adapters for parallel coolant.
-TODO: Chassis coolant takeoff.
-TODO: Radiator (choose to match PSU chassis) . https://smile.amazon.com/s?k=Alphacool+radiator&i=electronics&crid=38OVLJY419X1L
+https://smile.amazon.com/dp/B01BJBBMT6
+	Radiator (choose to match PSU chassis) .
 
 
 
@@ -90,11 +92,9 @@ https://smile.amazon.com/llano-Bi-Directional-Switcher-Splitter-Supports/dp/B09P
 
 
 
-
+(deferred)
 https://www.primochill.com/products/copper-tubing-soft-3-8in-id-by-1-2in-od-1-foot?_pos=2&_sid=1625535e4&_ss=r
-
 https://www.primochill.com/products/primochill-copper-tubing-bender-1-2in-7-8in?_pos=1&_sid=1625535e4&_ss=r
-
 https://www.primochill.com/products/bykski-copper-tube-cutting-tool-b-mttp-shr?_pos=3&_sid=1625535e4&_ss=r
 
 
@@ -124,6 +124,7 @@ https://smile.amazon.com/StarTech-8-Inch-Power-Extension-ATX24POWEXT/dp/B000FL60
 
 
 
+(abandoned)
 https://hobbyking.com/en_us/nylonxt90connectorsmale-female-5pairs.html
 https://hobbyking.com/en_us/nylon-xt90-connectors-male-female-5-pairs-black-1.html
 	XT90...
@@ -137,7 +138,42 @@ https://smile.amazon.com/ASUS-ROG-Flexible-Extender-Extension/dp/B082G52H1L
 	PCI-E risers...
 
 
+https://smile.amazon.com/s?k=universal+gpu+waterblock
 https://smile.amazon.com/EK-Thermosphere-Water-Block-Nickel-Plexi/dp/B00KGKLLYS
+
+
+
+
+https://smile.amazon.com/gp/product/B07LB27595
+https://smile.amazon.com/gp/product/B07LB1M3K8
+https://smile.amazon.com/gp/product/B09KWX14Z7
+	Coolant liquids. Methanol may be useful in either a 30%methanol/70%water or 50%/50% mixture to improve flow and reduce viscosity, but has severe disadvantages (eg. much greater corrosion potential, possible additive incompatibility) and would worsen cooling performance at higher concentration (ie. due to lower heat capacity). Dubious.
+
+
+
+
+
+
+
+
+_ Dubious - Thermal Paste _
+
+https://www.amazon.com/ARCTIC-MX-5-Incl-Spatula-Non-Conductive/dp/B08T5Q4J7H
+https://www.amazon.com/ARCTIC-MX-5-Conductivity-Non-Conductive-Non-capacitive/dp/B08T64M68V
+	'completely metal-free'
+
+https://smile.amazon.com/Noctua-NT-H2-10g-Pro-Grade-Compound/dp/B07MZ5GQBM
+https://smile.amazon.com/Noctua-NT-H2-Thermal-Cleaning-Performance/dp/B07MZ45X9G
+	'Safe to use with any type of CPU cooler, regardless of whether it’s made from copper or aluminium and whether it’s nickel-plated or notSafe to use with any type of CPU cooler, regardless of whether it’s made from copper or aluminium and whether it’s nickel-plated or not'
+	'Not electrically conductive and non-corroding'
+	'recommended storage time up to 3 years, recommended usage time on the CPU up to 5 years'
+
+https://smile.amazon.com/gp/product/B00ZJS8Q6S
+https://smile.amazon.com/gp/product/B00ZJSF5LM
+	Well proven.
+
+
+
 
 
 
@@ -148,5 +184,20 @@ _ Reference _
 
 https://en.wikipedia.org/wiki/Embrittlement
 	'Silicone' '−184.4' degC
+
+
+https://www.electronics-cooling.com/2006/05/an-overview-of-liquid-coolants-for-electronics-cooling/
+
+
+https://www.youtube.com/watch?v=i827L4FU6Bk
+	Albeit, ethanol should be slightly less efficient than methanol.
+
+
+https://www.overclock.net/threads/qvl-thermal-compound-no-conductonaut.1644882/
+	So conductonaut (ie. liquid metal thermal paste) may be allowable, not expected to cause severe damage, however, if not necessary, possibly undesirable and high-risk.
+
+
+https://www.youtube.com/watch?v=AGD97Jggrbc
+	Hardening of thermal paste at tip of dispenser is definitely possible.
 
 
