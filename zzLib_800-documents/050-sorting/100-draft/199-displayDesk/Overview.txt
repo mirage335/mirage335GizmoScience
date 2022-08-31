@@ -1,0 +1,16 @@
+
+
+Front of table must have a 98in width, or slightly less if side displays are angled more toward the user, or slightly more if side displays are angled more away from the user. This can be effected by two ~1x12x24 boards and as many as four clamps or as few as two clamps.
+
+Corners of the boards can be used to rais the legs of the side displays where appropriate. Small amounts of gorilla tape can ensure stability of all displays.
+
+
+
+
+
+
+
+
+
+
+
