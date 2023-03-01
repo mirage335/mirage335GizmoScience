@@ -1,0 +1,31 @@
+
+Please note I, mirage335, have seen little of Game of Thrones aside from snippets, I suspect 'The 100' is far better overall for both logical consistency and interesting issues raised.
+
+This was my first attempt to see wat ChatGPT could do in prose after a few interestingly functional technical bits of code, such as a usable GitHub backup script now included with upstream 'ubiquitous bash', IIR biquad filter code, etc.
+
+
+
+_ Conversation _
+
+Please write a clever plot for a game of thrones episode with a cyberpunk backdrop.
+
+
+
+
+In a cyberpunk version of Game of Thrones, the story centers around the struggle for power in a futuristic city known as King's Landing. The city is controlled by a powerful corporation called the Iron Bank, which uses advanced technology and cyber-enhanced soldiers to enforce its rule.
+
+The episode opens with a young hacker named Arya Stark breaking into the Iron Bank's systems to steal valuable information. She is caught by the bank's security forces and taken to their headquarters, where she meets the ruthless CEO, Cersei Lannister.
+
+Cersei offers Arya a deal - if she can hack into a rival corporation's mainframe and steal their secret weapon plans, Cersei will let her go. Arya agrees, but soon realizes that the rival corporation is none other than her family's old enemy, House Targaryen.
+
+Meanwhile, Jon Snow, a former soldier who now works as a private investigator, is hired by Daenerys Targaryen to find out who is behind a series of cyber-attacks on her company. Jon is initially skeptical of Daenerys' motives, but soon discovers that she is being targeted by the Iron Bank in an attempt to weaken her power.
+
+As Arya and Jon navigate the dangerous world of corporate espionage, they must also confront their own personal demons. Arya struggles with her loyalty to her family and her desire for revenge, while Jon grapples with the guilt he feels over his past as a soldier.
+
+In the climactic scene, Arya and Jon team up to infiltrate the Iron Bank's headquarters and steal the secret weapon plans. They succeed in their mission, but are caught by Cersei's soldiers. Just as it seems they will be executed, Daenerys arrives with her own cyber-enhanced soldiers and launches a full-scale assault on the Iron Bank.
+
+The episode ends with a fierce battle between Daenerys and Cersei's forces, with Arya and Jon fighting alongside Daenerys. In the end, Daenerys emerges victorious and takes control of King's Landing, vowing to use her power to create a better world for all its citizens.
+
+
+
+
