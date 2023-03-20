@@ -1,0 +1,42 @@
+
+
+Laboratory EUVL has existed from the 'mid-1980s'. All that 'lithoDive' adds is modern automation.
+
+Specifically, 'lithoDive' will only add motion control (eg. air bearings, actinic imaging during exposure, scatterometry, etc), maskless (eg. DLP) modulation, real-time defect correction, an automated workflow for processing only a small part of a single chip at a time, and possibly some somewhat more cost-effective adaptive optics.
+
+Since this is nothing new, prior research exists. Where the more distributed economics of prototyping are relevant, rather than the concentrated throughput economics of factories, much less sophisticated techniques and different materials can be suitable for light sources, mirrors, and photo resist.
+
+
+
+
+
+_ Search Terms _
+
+soft x-ray projection
+
+Hiroo Kinoshita
+
+
+
+
+
+
+_ Further _
+
+Because much of this research has been around quite a while, and because such specifics as numeric sensitivity figures, chemical formulas, etc, are needed, ChatGPT may be able to identify the literature documenting best known techniques and materials.
+
+
+
+
+_ Reference _
+
+https://www.asml.com/en/news/stories/2022/making-euv-lab-to-fab
+	'Hiroo Kinoshita'
+
+https://iopscience.iop.org/article/10.1143/JJAP.33.6919/meta
+	'NiCr/C multilayer'
+	'synchrotron radiation (SR) from the SORTEC ring'
+	'Sensitivities of 0.7 µ m-thick polymethylmethacrylate (PMMA), ZEP and AZ-PN100 are 285, 34, and 15 mJ/cm2, respectively.'
+	'Resist contrasts (γ-values) of 0.7 µ m-thick PMMA, ZEP and AZ-PN100 are 2.5, 1.6 and 3.1, respectively.'
+
+
