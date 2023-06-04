@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+_ Reference _
+
+https://www.sciencedirect.com/science/article/pii/S0893608018300704
+ 'Connectivity inference from neural recording data: Challenges, mathematical bases and research directions'
+	'mesoscopic level, inferring connections between neurons in local circuits on the basis of neural activity recording data from multi-electrode recordings or flourescence imaging'
+	
+	'Functional connectivity (FC) is defined as statistical dependence among measurements of neuronal activity.'
+	'Even if there is an anatomical connection between neurons, it may not be detected when, for example, the source neuron is inactive or the recipient neuron is unresponsive due to strong inhibition by other neurons.'
+	
+	'A heuristic method to determine the direction is to use the average temporal order of activations of two neurons (Sutera et al., 2014). Another issue is that inferred connectivity can be a mix of direct causal effects between neuron pairs and indirect effects through other neurons. One way to address this problem is to use matrix deconvolution (Barzel & Barabási, 2013; Feizi, Marbach, Médard, & Kellis, 2013; Magrans & Nowe, 2014), as described in Section 6.1.2.'
+	
+	'In order to validate the connectivity inference method itself, use of synthetic data from a network model with a known connection matrix is the first step.'
+
+	'Area Under the Curve of the Receiver–Operator Characteristic (AUROC)'
+
+	'Even when the temporal order of activities is considered, if time resolution of the measurement or analysis is coarse, ordered activation can appear as simultaneous activation, making it difficult to determine directionality.'
+		MAJOR - This is why the temporal resolution desired can be as high as 100kHz .
+
+	'Diversity also applies to connectivity because underlying synapses can have complex and diverse characteristics (e.g. excitatory/inhibitory, facilitatory/depressive, delays, etc.) (Kandel, Schwartz, Jessell, et al., 2000b, chap. 8). Understanding how a given effective network emerges may require the inference of many additional parameters beyond a simple weight matrix.'
+		MAJOR - May not be relevant for merely iteratively measuring and imposing a similar connectome and synaptic weights.
+
+	'Additional data, such as the local field potential (Destexhe & Bedard, 2013), can also facilitate understanding of nonstationary behaviors at the microcircuit level.'
+		MAJOR MAJOR - This was not an expected statement.
+
+	'Therefore, inference methods need to be designed to maximize computational efficiency and to minimize the cost of parallelized implementations (Gerstner et al., 2014: chap. 10).'
+
+	'Cross-correlation' 'Takes into account the spike train history'
+		MAJOR MAJOR - SEVERE - Indeed, 'cross-correlation' is the reason for acquiring 'HS' data set.
+
+	'Sutera et al. (2014): simulation data that assume calcium imaging'
+		'Solution based on PC won First Neural Connectomics Challenge'
+
+	'Summary of model-free connectivity inference methods, Information Theoretic (4.2) and Supervised Learning (4.3, 6.1.3).'
+		'Does not discriminate direct/indirect effects' 'Same as transfer entropy'
+		MAJOR - 'Generalized transfer entropy' 'use of information from the same time bin for both neurons enhances reconstruction performance when the data source has a low sampling rate (e.g. calcium imaging)'
+		'Convolutional neural network' 'assumes the ground truth connectivity labels of a training data set that has similar properties as the network that we want to reconstruct'
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/Receiver_operating_characteristic
+	'P-D' 'probability of detect'
+	'P-FA' 'tolerance for false alarms'
+	'P-D = 1/2* erfc * ( erfc^-1 * (2P-FA) - sqrt(X) )
+...
+	CONCLUSION - Assumption is not challenged, that a statistically significant number of correlated TX events within a time interval can be determined merely as an exceptional (eg. top 0.01%) number.
+
+
+
