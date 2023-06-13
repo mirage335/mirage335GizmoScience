@@ -40,3 +40,42 @@ https://iopscience.iop.org/article/10.1143/JJAP.33.6919/meta
 	'Resist contrasts (γ-values) of 0.7 µ m-thick PMMA, ZEP and AZ-PN100 are 2.5, 1.6 and 3.1, respectively.'
 
 
+
+
+https://en.wikipedia.org/wiki/Maskless_lithography
+	'Dutch and Russia jointly funded (Rusnano) company Mapper Lithography producing multi e-beam maskless lithography MEMS components went bankrupt and was acquired by ASML Holding, a major competitor at the time.'
+
+https://www.researchgate.net/publication/336270391_Maskless_EUV_lithography_an_alternative_to_e-beam
+https://www.euvlitho.com/2019/P22.pdf
+
+
+
+https://www.euvlitho.com/2019/P22.pdf
+	'Blue‐X (6.7‐nm wavelength)'
+	'Maskless Scanner Optics'
+	'K. Johnson 2019 EUVL Workshop P‐22 (euvlitho.com)'
+...
+	SEVERE - This may be the best information so far on maskless EUVL, especially with an emphasis on optics that can take advantage of maskless, and with only 100x (ie. two orders of magnitude) less throughput.
+
+
+
+https://www.researchgate.net/publication/336270391_Maskless_EUV_lithography_an_alternative_to_e-beam
+
+https://www.researchgate.net/publication/258714194_Maskless_EUV_Lithography_An_Already_Difficult_Technology_Made_Even_More_Complicated
+ 'Maskless EUV Lithography: An Already Difficult Technology Made Even More Complicated?'
+ 2012
+	'It will be shown nanomirrors based maskless approach is one path to costeffective and defect-free EUV lithography, rather than making it even more complicated.'
+		SEVERE - Strongly implies shutters are less desirable than the 'DLP' kind of approach. Whether the resulting optics proposed can otherwise achieve similar throughput or numerical aperture easily, may be dubious.
+	'The focus of our work is to optimize the existing vertical comb process and scale down the mirror size from several microns to sub-micron regime.'
+	'The wafer scan and EUV laser jitter induced image blur phenomenon is discussed and a blurred imaging theory is constructed. This blur effect is found to degrade the image contrast at a level that mainly depends on the wafer scan speed.'
+
+
+
+
+
+
+
+
+
+
+
