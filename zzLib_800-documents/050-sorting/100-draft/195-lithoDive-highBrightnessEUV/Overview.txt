@@ -1,0 +1,279 @@
+
+Some evidence seems to suggest compact EUV light sources can achieve micrometer intensity beyond hundreds of milliwatts.
+
+Cost of sufficiently high purity tin may be the deciding factor between tin and Xenon. Xenon is already reportedly scalable to tens of watts, apparently at micrometer intensity, already well beyond requirements for EUVL prototyping.
+
+
+
+_ Conclusions _
+
+Both Xenon and Tin EUV light sources must be pursued.
+
+Xenon has expected advantages with input laser simplicity and compactness, with acceptable power limits. Yet, Xenon may emit heavy ions, with a prohibitive effect on collector optics useful lifespan.
+
+Tin may be necessary to avoid optics degradation, and such workarounds as tin wire instead of droplets, or control of the velocity (ie. spin) of the droplets, may simplify correct placement of the droplets at collector optics focus. Yet, tin droplets may require other surrounding particles, and tin plasmas may not be scalable.
+
+Slide presentation as YouTube video from 'Cymer' channel is exceptionally informative, though nothing seen was unexpected except maybe the simplicity of the system. The CO2 laser focusing was stated as diffraction limited to a 100um spot size, implying a ~10:1 focal length to diameter ratio . There may be some scaling inefficiency from droplet sizes below the focal spot, but this should not be prohibitive, especially if the droplets are shaped into liquid sheets comparable to laser spot size.
+
+Deciding factor may be tin purity. If such refinement techniques as zone melting of the tin are required, then the raw materials cost of Xenon may be irrelevant.
+
+Modern debris collection in both cases (ie. Tin and Xenon) may rely on strong (ie. superconducting at large scale) magnets.
+
+
+Useful lifespan of collector optics, unlike throughput, is still as much of a concern here, if not more of a concern. Much time may be invested in manufacturing a single device, so any variation or human intervention is a risk to any acceptable yield.
+
+
+
+_ Findings _
+
+Phosphor can be used after EUV bandpass mirrors to specifically detect EUV.
+
+
+Xenon may be PROHIBITIVE due to high energy ions degrading collection optics. Yet the limit otherwise may be several tens of watts of EUV light.
+
+
+Droplet position and velocity must be highly predictable, but not necessarily without some spin. Deliberate introduction of spin may influence droplet shape after melting.
+
+Smaller optics and correspondingly smaller droplet path may reduce droplet speed. Stated droplet speeds are over a possibly wider range than ~80m/s to ~10m/s .
+
+Some particles around tin droplet may be necessary. If solid matter is usable, tin wire with preformed impressions, coatings, etc, pushed through a small opening, essentially resembling a spark plug, may be simpler than tin droplets in free space.
+
+
+MAJOR - Concave droplet shape is due to the tin droplet moving past the prepulse laser, as the focal spot of that laser is down the middle.
+
+
+
+
+_ Reference _
+
+
+https://youtu.be/pfU20SAR21A?t=226
+ 'You Didn’t Build your PC… This Did.'
+	FUDNAMENTAL - Illustrates both that the prepulse laser is at a distance away from the central focus, and that the prepulse laser can draw a line down the center of the droplet. And yes, this is obviously from another familiar ASML video.
+	...
+	detected position of tin droplets to laser pulse timing...
+	...
+	piezoelectric actuator...
+	...
+	collector mirror is water cooled... temperature stability
+		FUNDAMENTAL - This answers the fundamental issue of thermal expansion usually causing solid objects to deform more than 1nm at carefully controlled variations from room temperature. Water cooling must be better than laminar air flow.
+	...
+	MAJOR - magnetically levitating... so not air bearing
+	...
+	FUNDAMENTAL - MAJOR - SEVERE - 'sadly you can't solder to 7nm'
+		CONCLUSION - SEVERE - A very difficult, not prohibitive but very expensive, bottleneck for some kinds of semiconductor devices, especially neural interfaces.
+	...
+	'It is likely EUV will be the last wavelength required for lithography since with future improvements, the limiting factor of the resolutuon will become the size of atoms.' '0.1-0.5nm'
+		DUBIOUS - More plausible may be 2nm.
+	...
+	Very informative video.
+
+
+
+
+
+
+
+https://www.energetiq.com/euv-z-pinch-electrodeless-light-source-products-energetiq
+	'Electrodeless Z-Pinch'
+	...
+	'magnetically confined away from the source walls, minimizing the heat load and reducing debris'
+	...
+	'Typical Output Power' '10W' '20W' '400mW'
+	'Typical Brightness' '5 W/mm^2.sr'
+	'Target Gas' 'Xenon' 'Xenon' 'Nitrogen'
+		Seems the intensity may be mostly within expected 1umSq field of view.
+			SEVERE - If indeed the intensity is as desired for small field-of-view, possibly due to better intensity by avoiding long wavelength CO2 lasers (IIRC this has been seen reported by academic literature of desktop EUV light sources using pulsed YAG lasers), then tin droplet method may not be worthwhile. Such output power as the claimed 20W is quite high.
+				SEVERE SEVERE - Whether the spectral intensity of a Xenon source is adequate without a concave shape is not obvious. Xenon is very expensive, and if not reused, may be prohibitive. Thus, favoring tin droplets as a possibly reasonable cost saving measure.
+
+
+
+https://www.euvlitho.com/2019/P22.pdf
+https://spie.org/Publications/Proceedings/Paper/10.1117/12.2046416?SSO=1
+	MAJOR - 'Adlyte LPP' is cited as 0.3W, as much as ~300x more than 1mW expectation. Further searching suggests this is also a tin droplet system, which may not have been scaled down in cost or physical size, possibly not yet economically useful.
+
+
+
+https://www.proquest.com/openview/25f4377945d23f9d74bebd52338482f7/1?pq-origsite=gscholar&cbl=18750
+ 'Bright Coherent Ultrafast Tabletop Light Sources Development and the Application on EUV to Soft X-Ray Absorption Spectroscopy'
+	'10^9 photons/s/1% bandwidth'
+		Doesn't seem like much.
+
+
+
+
+
+
+https://www.youtube.com/watch?v=5yTARacBxHI
+ 'How An EUV Light Source Works'
+ 'Cymer'
+	'Tin' '4D type electronic structure'
+	'Cameras'
+
+https://www.youtube.com/watch?v=9VDJMivfhGU
+	droplet size... wasted laser power... spot size...
+		MAJOR - Spreading out the droplet to a concave sheet also improves use of more of the laser power.
+
+
+
+
+
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/7969/79692W/Stable-tin-droplets-for-LPP-EUV-sources/10.1117/12.879538.short
+ 'Stable tin droplets for LPP EUV sources'
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/6517/65170O/Laser-produced-EUV-light-source-development-for-HVM/10.1117/12.711097.short?SSO=1
+ 'Laser produced EUV light source development for HVM'
+
+https://iopscience.iop.org/article/10.1088/1361-6595/ab3302/meta
+ 'Physics of laser-driven tin plasma sources of EUV radiation for nanolithography'
+	'pre-expansion of droplet targets is indispensable for resolving the initial mismatch between the optimal laser spot (∼500 μm) and source etendue on the one hand, and the droplet diameter (∼30 μm) on the other (see figure 1)'
+	SEVERE - Many citations here, expected quite useful.
+	...
+	'In this section, the physics aspects of laser-droplet interaction are discussed along with the dynamics set in motion by the plasma created upon laser impact. In the available literature, two distinct classes of prepulses can be identified. Each class has its own advantages and disadvantages regarding obtainable EUV yield, and the generation of fast ionic and neutral debris. Recent developments in these two classes of prepulses are discussed in the following.'
+	...
+	'threshold [54–56] energy, E0, below which no propulsion occurs (see figure 4)'
+	MAJOR - 'The power exponent δ cannot be straightforwardly explained using any of the available analytical theories. Simulation results significantly deviate from the experimental values near the threshold energy [23]. This onset of ablation is controlled by physical processes distinct from those governing the fully ablative regime. Further work is required to fully understand the processes governing the threshold of the ablation of tin.'
+
+
+
+
+
+
+https://www.youtube.com/watch?v=xPviCEYtarY
+	'ultra-high purity tin'
+		DUBIOUS - MARKETING
+	'allotropes' 'allotropes' 'more brittle' 'easier to clean off' 'key driver of facilitating that is the purity grade of the tin' '5 nines or 6 nines tin is really needed'
+	SEVERE - 'can't just use 4 nines tin grade that's commonly' 'called high purity tin'
+	SEVERE - '6 to 8 months' 'we should have 6 nines availability'
+	...
+	'Superconductive Magnets'
+	...
+	'debris, which is interestingly enough, the reason why they chose this droplet scheme to limit the mass of tin that ends up being over the walls of the chamber and that you then need to clean up'
+
+
+
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/Carbon-dioxide_laser
+	'The resulting hot helium atoms must be cooled in order to sustain the ability to produce a population inversion in the carbon dioxide molecules. In sealed lasers, this takes place as the helium atoms strike the walls of the laser discharge tube. In flow-through lasers, a continuous stream of CO2 and nitrogen is excited by the plasma discharge and the hot gas mixture is exhausted from the resonator by pumps.'
+	'The addition of helium also plays a role in the initial vibrational excitation of N2, due to a near-resonant dissociation reaction with metastable He(23S1). Substituting helium with other noble gases, such as neon or argon, does not lead to an enhancement of laser output.'
+	'laser wavelength can be tuned by altering the isotopic ratio of the carbon and oxygen atoms comprising the CO2 molecules in the discharge tube'
+		... hopefully unnecessary... lasers can often be tuned by such other means as filtering the resonant cavity, by feeding amplification with a different wavelength, or by temperature
+
+https://en.wikipedia.org/wiki/Isotope_separation
+	'hydrogen, carbon, oxygen, and nitrogen can be enriched by distilling suitable light compounds over long columns'
+		Essentially, chemical distillation may be sufficient for laser gas.
+
+
+
+
+
+https://www.youtube.com/watch?v=5Ge2RcvDlgw&t=1011s
+	'Required plasma parameters'
+	'electron temperature' '30eV'
+	'diameter' '300-500 um'
+	'ion density' '3E18/cm^3'
+	'emission duration' '5 - 10 ns'
+	'cavity confinement'
+		'for one shot base study (to confirm optimum parameters' 'particles by gas flow'
+		'for multi kHz' 'droplet including particles'
+	'concave'
+		Reported results strongly suggest the effect of the concave shape is merely a simple confinement of the plasma resulting in a much less broad range of temperature. Such a condition should be easily met.
+	...
+	'not just good enough for the technology to work. Anyone can slap together a bunch of lab equipment and shove it in front of the users. It also has to be appreciably better than what is already on the market - or else there is no point for it to be'
+	...
+	FUNDAMENTAL - MAJOR MAJOR MAJOR - SEVERE - 'Xenon ice plasma also emitted high energy ions that degraded the optics anyway'
+		CONCLUSION - May be PROHIBITIVE .
+	...
+	'The CO2 laser needs to reach a power level of over 20 kilowatts, which requires a lot of amplification.'
+
+
+
+
+https://iopscience.iop.org/article/10.1088/1361-6595/ab3302
+	FUNDAMENTAL - MAJOR MAJOR - SPECIFICATION - [EUV] 'temperature requirement can be understood through the Stefan–Boltzmann law j* = σSBT4 describing the energy emitted per second per unit surface by a black body j* as a function of temperature T; σSB is the Stefan–Boltzmann constant' ... '∼20–40 eV plasma temperatures to produce the highly charged Sn ions' 
+	SEVERE - This temperature specification, combined with expected mass from reasonably expected efficiency and laser reflectivity, is sufficient to calculate the laser pulse power in joules. At least if linear scaling is possible to some usable limit.
+		MAJOR - Alignment (microscope) power is much less than exposure power. Variable power may reduce the continuous power requirements.
+	'AsSeenOnTV - Seems similar to a statement on the Asianometry channel. - 'These LPPs occupy a unique place in the plasma world, somewhere between the density and temperature conditions of the solar core and those of lightning.' '
+
+
+
+
+https://en.wikipedia.org/wiki/Excimer_laser
+	'Under the appropriate conditions of electrical stimulation and high pressure, a pseudo-molecule called an excimer (or in the case of noble gas halides, exciplex) is created, which can only exist in an energized state and can give rise to laser light in the ultraviolet range.'
+	'amplifier of the Nike laser' '670,000 volt electron beams'
+
+
+https://en.wikipedia.org/wiki/Nike_laser
+	'ARF' ... 'or' ... 'KRF' ... 'gas'
+
+https://en.wikipedia.org/wiki/Linear_transformer_driver
+	'up to 1 mega amps (106 ampere), with a risetime of less than 100 ns'
+		SEVERE - An order of magnitude beyond the EUV 'emission duration' apparently desired for some EUVL. May or may not be a relevant limitation for efficiency or feasibility, or may explain the use of CO2 laser amplification (presumably instead of Q-switching or similar).
+
+
+
+
+https://www.nature.com/articles/s41598-022-07323-z
+'A synchrotron-based kilowatt-level radiation source for EUV lithography'
+	'average power of about 2.5 kW can be achieved with the state-of-the-art accelerator and laser technologies'
+		CONCLUSION - Intriguing, but the use case is not obvious.
+
+
+https://www.photon-production.co.jp/en/products_e/mirrorcle_e.htm
+
+
+
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/7969/796926/Damage-testing-of-EUV-optics-using-focused-radiation-from-a/10.1117/12.879807.short
+	FUNDAMENTAL - 'EUV-to-VIS quantum convertors (Ce:YAG crystals, phosphor coatings) employed for beam characterization were investigated in terms of linearity, saturation behavior and conversion efficiency.'
+		MAJOR - Phosphor.
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9344/93440C/High-intensity-nanosecond-all-fiber-coiled-laser-and-extreme-ultraviolet/10.1117/12.2075546.short
+ 'High-intensity nanosecond all-fiber-coiled laser and extreme ultraviolet generation'
+ '2015'
+	'1.16-mJ' 'repetition rate of 20 kHz'
+		~20W
+	'full advantages of using fiber laser for a movable LPP EUV metrology source are revealed'
+	...
+	FUNDAMENTAL - 'output EUV signal within 10~20 nm in wavelength was confirmed with a Si/Zr-coated x-ray photodiode by varying numbers of Be and Al foil filters'
+
+
+
+
+
+
+https://www.researchgate.net/publication/228878852_Liquid-xenon-jet_laser-plasma_source_for_EUV_lithography
+ 'Liquid-xenon-jet laser-plasma source for EUV lithography'
+	'laser-to-EUV conversion efficiency result of 0.55 %/(2%BW 2πsr) at λ=13.45 nm'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
