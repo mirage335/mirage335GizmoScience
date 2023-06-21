@@ -1,7 +1,7 @@
 
 Some evidence seems to suggest compact EUV light sources can achieve micrometer intensity beyond hundreds of milliwatts.
 
-Cost of sufficiently high purity tin may be the deciding factor between tin and Xenon. Xenon is already reportedly scalable to tens of watts, apparently at micrometer intensity, already well beyond requirements for EUVL prototyping.
+Cost of sufficiently high purity tin may be the deciding factor between tin and Xenon. Xenon is already reportedly scalable to tens of watts, apparently at micrometer intensity, already well beyond requirements for EUVL prototyping. However, the relevance of Xenon based sources is not conclusively established.
 
 
 
@@ -256,7 +256,9 @@ https://www.researchgate.net/publication/228878852_Liquid-xenon-jet_laser-plasma
 
 
 
-
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10957/2515215/Table-top-EUVsoft-x-ray-source-for-metrological-applications/10.1117/12.2515215.short
+ 'Table-top EUV/soft x-ray source for metrological applications'
+	'1mJ/cm^2'
 
 
 
