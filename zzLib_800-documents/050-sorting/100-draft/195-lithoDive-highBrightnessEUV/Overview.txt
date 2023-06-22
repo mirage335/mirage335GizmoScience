@@ -1,7 +1,7 @@
 
 Some evidence seems to suggest compact EUV light sources can achieve micrometer intensity beyond hundreds of milliwatts.
 
-Cost of sufficiently high purity tin may be the deciding factor between tin and Xenon. Xenon is already reportedly scalable to tens of watts, apparently at micrometer intensity, already well beyond requirements for EUVL prototyping. However, the relevance of Xenon based sources is not conclusively established.
+Cost of sufficiently high purity tin may be the deciding factor between tin and Xenon. Xenon is already reportedly scalable to tens of watts, apparently at micrometer intensity, already well beyond requirements for EUVL prototyping. However, the relevance of Xenon based sources is not conclusively established, and tin purity may be less of an issue for prototyping by two orders of magnitude.
 
 
 
@@ -11,7 +11,7 @@ Both Xenon and Tin EUV light sources must be pursued.
 
 Xenon has expected advantages with input laser simplicity and compactness, with acceptable power limits. Yet, Xenon may emit heavy ions, with a prohibitive effect on collector optics useful lifespan.
 
-Tin may be necessary to avoid optics degradation, and such workarounds as tin wire instead of droplets, or control of the velocity (ie. spin) of the droplets, may simplify correct placement of the droplets at collector optics focus. Yet, tin droplets may require other surrounding particles, and tin plasmas may not be scalable.
+Tin may be necessary to avoid optics degradation, and tin droplets are produced with no surrounding particles and no deviation from an exact position certified by hours of high-speed camera photographs of identically placed pairs of tin droplets in a continuous stream.
 
 Slide presentation as YouTube video from 'Cymer' channel is exceptionally informative, though nothing seen was unexpected except maybe the simplicity of the system. The CO2 laser focusing was stated as diffraction limited to a 100um spot size, implying a ~10:1 focal length to diameter ratio . There may be some scaling inefficiency from droplet sizes below the focal spot, but this should not be prohibitive, especially if the droplets are shaped into liquid sheets comparable to laser spot size.
 
@@ -25,6 +25,12 @@ Useful lifespan of collector optics, unlike throughput, is still as much of a co
 
 
 _ Findings _
+
+Same CO2 laser, with a (possibly beamsplitter or rotating mirror) beam redirect, is used for both prepulse (tin droplet melting, shaping to laser diameter, and carving of a line down the droplet) as well as for plasma producing (as the droplet travels horizontally towards the center of the mirror).
+
+ASML's droplet generator is in fact tested to generate only droplets and at exact intervals over several hours.
+
+
 
 Phosphor can be used after EUV bandpass mirrors to specifically detect EUV.
 
