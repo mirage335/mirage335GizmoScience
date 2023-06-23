@@ -5,6 +5,14 @@ Cost of sufficiently high purity tin may be the deciding factor between tin and 
 
 
 
+_ Further _
+
+IIRC, tin under YAG laser illumination was ruled out on some inadequate throughput basis, below EUVL prototyping requirements either before writing uTST, or in fact documented in uTST. Repetition rate may have been the issue. What was the reason for ruling out that technology, and is that reason relevant, for example, to CO2 laser and newer solid-state lasers?
+
+If cost is sufficiently low, 'portability' may be achieved by simply building wherever needed. Particularly relevant to use of CO2 laser tubes, which may be bulky, but relatively lightweight and low cost.
+
+
+
 _ Conclusions _
 
 Both Xenon and Tin EUV light sources must be pursued.
@@ -265,6 +273,62 @@ https://www.researchgate.net/publication/228878852_Liquid-xenon-jet_laser-plasma
 https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10957/2515215/Table-top-EUVsoft-x-ray-source-for-metrological-applications/10.1117/12.2515215.short
  'Table-top EUV/soft x-ray source for metrological applications'
 	'1mJ/cm^2'
+
+
+
+
+
+
+https://www.euvlitho.com/2018/S11.pdf
+	'Blue-X'
+	'Res (nm)' '4'
+
+https://www.euvlitho.com/2020/S56.pdf
+ 'Blue – X (EUVL Extension): Status Update'
+ '2020'
+	'Wavelength' '(nm)' '6.7'
+	'Depth Graded Mirrors'wa
+	'BAT laser is 3 x more efficient than current CO2 lasers'
+		MAJOR - 'Thermal management is the chief risk for the high average power EUV Tm:YLF laser concept'
+			As expected.
+	'Sn LPP (planar solid target) driven by a 2-um-wavelength laser' 'Intensity (10^11W/cm^2)'
+		'2x CE and SP than YAG'
+
+
+
+
+https://lasers.llnl.gov/news/llnls-bat-laser-rd-delivers-big-results
+ 'LLNL’s ‘BAT Laser’ R&D Delivers Big Results'
+	'big results in a small package'
+
+
+
+https://www.repairfaq.org/sam/lasercc2.htm#cc2fgas
+	'gas ratio that is used for slow-flow type CO2 lasers is typically: 4.5:13.5:82 (4.5% CO2, 13.5% N2, and balance of helium)'
+		'He - You will need to purchase a bottle of this - 99.99% purity will be adequate. (What about party balloon helium if it is reasonably purs? --- Sam.)'
+		'N2 - Bubble air through water. (I guess the water removes any dust and the roughly 18 percent O2 and other gases in the air, and the additional water vapor, don't affect performance much or actually improves it! --- Sam.)'
+			MAJOR MAJOR - SEVERE - Bubble air through water. Interesting.
+				DUBIOUS. Maybe.
+		'CO2 - Sublime dry ice (dry ice in water), or mix up a quantity of vinegar and baking soda (sodium-bicarbonate). '
+	'color range you will actually see in the lasing cavity, if the gas mixture is correct will be amber. Blue means too much nitrogen and red means too much helium'
+		DUBIOUS - SEVERE - Contradicts experience. Pink has been usable at least with sealed tubes.
+	'The gas mix is pretty much standard for most slow-flow CO2 lasers and is usually 4.5% CO2: 13.5% N2: 82% He.'
+		MAJOR - 'This should be available pre-mixed from any large industrial gas supplier.'
+
+
+
+
+
+https://www.mdpi.com/2079-4991/10/8/1593
+ 'High Sensitivity Resists for EUV Lithography: A Review of Material Design Strategies and Performance Results'
+
+
+
+
+https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography
+	'less absorbing the resist, the more vertically uniform the absorption. '
+		'At a dose of 160 μC/cm2, corresponding to 15 mJ/cm2 EUV dose assuming one electron/photon, 30 eV electrons removed 7 nm of PMMA resist after standard development.[188] For a higher 30 eV dose of 380 μC/cm2, equivalent to 36 mJ/cm2 at one electron/photon, 10.4 nm of PMMA resist are removed.[189] These indicate the distances the electrons can travel in resist, regardless of direction.[190]'
+
 
 
 
