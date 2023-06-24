@@ -15,7 +15,10 @@ If cost is sufficiently low, 'portability' may be achieved by simply building wh
 
 _ Conclusions _
 
-Heavy metal LPP (water window short wavelength), Xenon, and Tin, EUV (or BEUV Beyond Extreme UltraViolet) light sources must all be pursued.
+Heavy metal LPP (water window short wavelength), Xenon, Tin, and other metals with suitable emission lines (presumably corresponding to typical incandescence), as EUV (or BEUV Beyond Extreme UltraViolet) light sources, must all be pursued.
+
+Fortunately, this should be simple with a suitably high power pulsed laser, which seems commonly available.
+
 
 Xenon has expected advantages with input laser simplicity and compactness, with acceptable power limits. Yet, Xenon may emit heavy ions, with a prohibitive effect on collector optics useful lifespan.
 
@@ -411,6 +414,26 @@ https://repository.arizona.edu/bitstream/handle/10150/667045/RevModPhys.94.03500
 
 
 
+https://www.cambridge.org/core/journals/microscopy-and-microanalysis/article/development-of-laboratorytype-soft-xray-microscope-cxrm-in-waterwindow-using-lpp-light-source/7387E33195812BD2C87932E6C453A933
+ 'Development of laboratory-type soft X-ray microscope, CXRM, in Water-window using LPP light source'
+	MAJOR MAJOR - SEVERE - Seems to vastly simplify the X-Ray optics, and seems to use a very compact LPP source.
+	'Bi target'
+	...
+	'150ps, <250 mJ/pulse, 10 Hz)
+		FUNDAMENTAL - MAJOR - Reusing the same target? Or scanning across a flat target? Interesting. Efficiency may be lower, but may be usable experimentally.
+	...
+	PROHIBITIVE - 'organelles observed in X-ray microscope images cannot be exactly identified because there is no identification information' 'combine usual staining-methods' 'instrument capable of both visible and X-ray was constructed'
+
+
+
+
+
+https://www.euvlitho.com/2011/P5.pdf
+	'Gd, Tb plasmas'
+
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9776/97761M/Study-of-Gd-Tb-LPP-emission-near-%ce%bb--67nm/10.1117/12.2219840.short?SSO=1
+ 'Study of Gd/Tb LPP emission near λ = 6.7nm for beyond EUV lithography'
 
 
 
