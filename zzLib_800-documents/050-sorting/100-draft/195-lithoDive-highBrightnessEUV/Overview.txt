@@ -332,11 +332,21 @@ https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography
 
 
 
-
-
-
-
-
+https://opg.optica.org/osac/fulltext.cfm?uri=osac-4-11-2875&id=464701
+ 'Bragg mirrors with modified period for sub-10-nm wavelengths'
+	'3.12 nm' 'Bragg mirrors with superlattices and depth grading of their period'
+	...
+	'Superlattice-related reflection peaks (between normal incidence and total reflection) are very narrow, and sharpen with decreasing wavelength. Depth grading reduces and broadens the peaks. Together with weighting by source spectra, all-angle reflection is demonstrated.'
+	...
+	MAJOR - 'studied numerically'
+	...
+	'For La/B4C (this work), La/B and LaN/B highest reflectance is obtained at a wavelength near 6.64 nm above the boron-K absorption edge (6.6 nm) [16], for Cr/Sc near 3.12 nm above the scandium-L absorption edge (3.1 nm) [17].'
+	...
+	'standard Bragg mirror has constant period of the bilayers and constant thickness of the individual layers.'
+	MAJOR - 'In “superlattice mirrors” certain layers of one element are replaced periodically by layers of the other element (Fig. 1). E.g. in every fifth bilayer of a La/B4C mirror La (black squares) is replaced by B4C indicated by the grey squares (notation “superlattice-5”, SL-5).'
+	MAJOR - 'Compared to the standard mirrors the number of bilayers is increased to 250 (La/B4C) and 500 (Cr/Sc) which keeps the number of La/B4C and Cr/Sc interfaces constant (399 and 799, resp.).'
+	...
+	'The integration is from -40° to +40° which covers the full width of the near-normal-incidence reflectance peaks. For a range narrower than -10° to +10°, which might be relevant for weakly diverging or converging beams, the advantage of grading remains.'
 
 
 
