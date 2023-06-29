@@ -5,6 +5,20 @@ Cost of sufficiently high purity tin may be the deciding factor between tin and 
 
 
 
+_ Abrupt _
+
+- Liquid Tin Stream -
+
+Apparently an interrupted liquid tin stream, not solid droplets at all, is used for EUV. Presurization may be of the liquid tin through the nozzle, rather than by any pneumatic gas.
+
+This seems sensible given the very short distance these droplets travel - angular accuracy is not especially essential.
+
+Linear position (ie. timing) of the droplets may have a tolerance on the order of 30% (likely), unless the camera shutter from the footage shown has such a wide tolerance (unlikely).
+
+All this was noticed by more closely watching the Linus Tech Tips video regarding ASML's EUV source.
+
+
+
 _ Further _
 
 IIRC, tin under YAG laser illumination was ruled out on some inadequate throughput basis, below EUVL prototyping requirements either before writing uTST, or in fact documented in uTST. Repetition rate may have been the issue. What was the reason for ruling out that technology, and is that reason relevant, for example, to CO2 laser and newer solid-state lasers?
